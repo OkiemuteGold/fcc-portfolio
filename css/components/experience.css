@@ -1,0 +1,157 @@
+/* @import url("./experience-video.css"); */
+
+#experience {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#experience .experience-content {
+  background: var(--lightestGray);
+  border-radius: 80px 0px 80px 0px;
+  padding: 70px 60px;
+}
+
+.work-place-item {
+  position: relative;
+  margin-left: 20px;
+  color: var(--textColor);
+}
+
+.work-place-item h3 {
+  font-size: 20px;
+  font-family: var(--fontUbuntu);
+  margin-bottom: 5px;
+}
+
+.work-place-item h3 span {
+  color: var(--customGreen);
+}
+
+.work-place-item .date {
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.work-place-item li {
+  font-size: var(--fontSmall);
+  line-height: 22px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  letter-spacing: var(--letterSpaceSm);
+}
+
+.experience-content .nav-tab {
+  height: max-content;
+  margin-bottom: 30px;
+  border-left: 1px solid var(--customBlueTab);
+  background: var(--lighterGray);
+}
+
+.experience-content .nav-tab li {
+  font-size: var(--fontSmall);
+  font-weight: 500;
+  color: var(--gray);
+  letter-spacing: var(--letterSpaceLg);
+
+  padding: 6px 10px;
+  line-height: 26px;
+  position: relative;
+}
+
+.experience-content .nav-tab li,
+.experience-content .nav-tab li.active {
+  transition: var(--transition);
+}
+
+.experience-content .nav-tab li:hover,
+.experience-content .nav-tab li.active {
+  background: var(--customBlueTab);
+  color: #fff;
+}
+
+.experience-content .nav-tab li.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3px;
+  height: 100%;
+  width: 4px;
+  background: var(--customBlue);
+  border-radius: 2px;
+}
+
+.experience-content .nav-tab li:hover {
+  cursor: pointer;
+}
+
+.experience-content .nav-tab li.active {
+  cursor: default;
+}
+
+@media screen and (min-width: 680px) {
+  #experience .experience-content .title {
+    color: var(--black);
+  }
+
+  .work-place-item {
+    color: var(--gray);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #experience {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  #experience .experience-content {
+    background: none;
+    border-radius: none;
+    padding: 60px 0px 0;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #experience {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .experience-content .nav-tab {
+    width: 385px;
+  }
+
+  .work-place-item {
+    max-width: 390px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .experience-content .nav-tab {
+    width: 335px;
+  }
+
+  .work-place-item {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #experience {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .experience-content .nav-tab {
+    width: 290px;
+  }
+
+  .work-place-item {
+    max-width: 300px;
+  }
+}

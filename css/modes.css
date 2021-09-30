@@ -1,0 +1,58 @@
+.dayTheme {
+  --bodyBg: var(--customWhite);
+  --headerStickedBg: rgba(0, 0, 0, 0.055);
+  --heroBg: var(--white);
+  --footerBg: var(--lightestGray);
+  --footerColor: var(--black);
+
+  --title: var(--black);
+  /* --titleSpan: var(--gray); */
+  --subtitle: var(--customGreen);
+  --textColor: var(--gray);
+
+  --button2: var(--customGreen);
+  --button2Hover: var(--transparent);
+
+  --shadow: var(--shadowColor1);
+  --modeIconColor: var(--customDark);
+}
+
+.nightTheme {
+  --bodyBg: var(--customDark);
+  --headerStickedBg: var(--shadowColor2);
+  --heroBg: var(--customBlueTab);
+  --footerBg: var(--transparent);
+  --footerColor: var(--lightGray);
+
+  --title: var(--customWhite);
+  /* --titleSpan: var(--customWhite); */
+  --subtitle: var(--lightGray);
+  --textColor: var(--lightGray);
+
+  --button2: var(--transparent);
+  --button2Hover: var(--customGreen);
+
+  --shadow: var(--shadowColor2);
+  --modeIconColor: var(--day);
+}
+
+.mode {
+  padding: 10px;
+  background: var(--lighterGray);
+  border-radius: 10%;
+}
+
+.mode-icon {
+  font-size: var(--fontPara);
+  transition: color var(--transition);
+  text-transform: capitalize;
+}
+
+.fa-moon,
+.fa-sun {
+  color: var(--modeIconColor);
+}
+.fa-moon:hover,
+.fa-sun:hover {
+  cursor: pointer;
+}

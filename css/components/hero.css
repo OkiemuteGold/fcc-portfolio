@@ -1,0 +1,119 @@
+#hero {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  /* background: #fff; */
+  background: var(--heroBg);
+  border-radius: 2px;
+}
+
+#hero .content {
+  max-width: 800px;
+  padding: 50px 150px;
+}
+
+#hero .content > span {
+  padding-left: 5.5px;
+  font-size: var(--fontPara);
+  position: relative;
+  color: var(--customGreen);
+}
+
+#hero .content h1 {
+  /* font-size: clamp(40px, 8vw, 80px); */
+  font-size: 4.5rem;
+  font-weight: 600;
+  font-family: var(--fontUbuntu);
+  letter-spacing: var(--letterSpaceMd);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  line-height: 75px;
+  color: var(--title);
+}
+
+#hero .content h1 span:last-child {
+  font-size: 4rem;
+  color: var(--textColor);
+  text-transform: initial;
+  display: inline-block;
+  margin-top: 10px;
+  letter-spacing: var(--letterSpaceSm);
+}
+
+#hero .content p {
+  font-size: var(--fontPara);
+  max-width: 520px;
+  line-height: 26px;
+  letter-spacing: var(--letterSpaceSm);
+}
+
+#hero .content .buttons {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1025px) {
+  #hero {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  #hero .content h1 {
+    font-size: 4rem;
+    line-height: 70px;
+  }
+
+  #hero .content h1 span:last-child {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #hero {
+    justify-content: center;
+  }
+
+  #hero .content {
+    max-width: 100%;
+    padding: 0px 100px 30px;
+  }
+
+  #hero .content h1 {
+    font-size: 3.5rem;
+    line-height: 55px;
+  }
+
+  #hero .content h1 span:last-child {
+    font-size: 2.85rem;
+  }
+
+  #hero .content p {
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #hero .content {
+    padding: 0px 20px 30px;
+  }
+
+  #hero .content h1 {
+    font-size: 2.85rem;
+    line-height: initial;
+  }
+
+  #hero .content h1 span:last-child {
+    font-size: 2.5rem;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #hero .content h1 {
+    font-size: 2.3rem;
+    letter-spacing: var(--letterSpaceSm);
+  }
+
+  #hero .content h1 span:last-child {
+    font-size: 2rem;
+  }
+}

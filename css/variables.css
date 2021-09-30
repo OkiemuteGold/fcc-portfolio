@@ -1,0 +1,37 @@
+:root {
+  --day: #fad54e;
+
+  --customGreen: rgb(144, 194, 43);
+  --customBlue: rgb(12, 117, 158);
+  --customBlueTab: rgba(12, 117, 158, 0.55);
+  --customWhite: #f4f4f4;
+
+  --black: #020202;
+  --white: #fff;
+  --customDark: #121212;
+  --gray: #777;
+  --lightGray: #b4b4b4;
+  --lighterGray: #e5e5e5;
+  --lightestGray: #eee;
+
+  --transparent: transparent;
+
+  --shadowColor1: rgba(0, 0, 0, 0.15);
+  --shadowColor2: rgba(0, 0, 0, 0.3);
+
+  --transition: 0.4s ease;
+
+  --fontSmall: 0.875rem;
+  --fontPara: 1.05rem;
+  --fontHead: 2.25rem;
+  --fontLg: 3rem;
+  --fontLato: "lato", sans-serif;
+  --fontUbuntu: "Ubuntu", sans-serif;
+  /* --fontAzeret: "Azeret Mono", monospace; */
+
+  --letterSpaceSm: 0.5px;
+  --letterSpaceMd: 1px;
+  --letterSpaceLg: 2px;
+  --letterSpaceXl: 4px;
+  --letterSpaceXXl: 6px;
+}
