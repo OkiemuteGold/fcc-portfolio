@@ -9,39 +9,70 @@
   transition: var(--transition);
 }
 
+.project-item.hidden {
+  display: none;
+}
+
 .project-item:hover {
   box-shadow: 0.5rem 0.5rem 1.75rem var(--shadow);
 }
 
-.project1,
-.project2,
-.project3 {
+.bg-img-container {
+  max-width: 100%;
+  height: 180px;
+}
+
+.project-item .bg-img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-}
-
-.project1 {
-  background-image: url("/image/project1.jpg");
-}
-.project2 {
-  background-image: url("/image/surface-pro-7.jpg");
-  background-position: left center;
-}
-.project3 {
-  background-image: url("/image/project3.jpg");
-}
-
-.bg-img {
-  max-width: 100%;
-  height: 200px;
   border-radius: 5px 5px 0 0;
 }
 
+.project-personal-portfolio {
+  background-image: url("/image/projects/portfolio.png");
+}
+.project-weather-js {
+  background-image: url("/image/projects/weather-app-js.png");
+}
+.project-shopify-int-challenge {
+  background-image: url("/image/projects/shopify-int-challenge.png");
+}
+
+.project-tech-doc {
+  background-image: url("/image/projects/tech-doc.png");
+}
+.project-product-landing {
+  background-image: url("/image/projects/product-landing.png");
+}
+.project-survey-form {
+  background-image: url("/image/projects/survey-form.png");
+}
+
+.project-tribute {
+  background-image: url("/image/projects/tribute.png");
+}
+.project-tosdis-temp {
+  background-image: url("/image/projects/tosdis.png");
+}
+.project-weight-conv {
+  background-image: url("/image/projects/weight-conv-js.png");
+}
+
+.project-weather-vue {
+  background-image: url("/image/projects/weather-app-vue.png");
+}
+.project-quiz-vue {
+  background-image: url("/image/projects/quiz.png");
+}
+.project-hero {
+  background-image: url("/image/projects/only-hero.png");
+}
+
 .project-description {
-  padding: 30px;
+  padding: 30px 20px;
   letter-spacing: var(--letterSpaceSm);
 }
 
@@ -110,9 +141,36 @@
   font-family: var(--fontUbuntu); */
 }
 
-.view-more-projects .btn:hover {
+.view-more-projects .btn:hover,
+.view-more-projects .btn:active {
   background: var(--button2) !important;
   color: var(--customWhite) !important;
+}
+
+.spinner {
+  /* display: inline-block; */
+  display: none;
+  height: 10px;
+  width: 10px;
+  margin-left: 7px;
+  vertical-align: -0.125em;
+  border: 3px solid var(--spinner);
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border 0.75s linear infinite;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+.view-more-projects .btn:hover .spinner,
+.view-more-projects .btn:active .spinner {
+  border: 3px solid var(--spinnerHover);
+  border-right-color: transparent;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -142,7 +200,7 @@
 }
 
 @media screen and (max-width: 376px) {
-  .bg-img {
+  .bg-img-container {
     height: 170px;
   }
 }

@@ -405,12 +405,6 @@ img {
     padding: 100px 20px 50px;
   }
 
-  #hero .content .btn {
-    min-width: 95px;
-    padding: 10px;
-    font-size: var(--fontSmall);
-  }
-
   .title {
     font-size: 1.725rem;
     margin-bottom: 30px;

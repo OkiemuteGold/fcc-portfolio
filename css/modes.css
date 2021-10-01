@@ -2,6 +2,7 @@
   --bodyBg: var(--customWhite);
   --headerStickedBg: rgba(0, 0, 0, 0.055);
   --heroBg: var(--white);
+  --heroBg2: var(--heroBgImg);
   --footerBg: var(--lightestGray);
   --footerColor: var(--black);
 
@@ -13,6 +14,9 @@
   --button2: var(--customGreen);
   --button2Hover: var(--transparent);
 
+  --spinner: var(--customGreen);
+  --spinnerHover: var(--white);
+
   --shadow: var(--shadowColor1);
   --modeIconColor: var(--customDark);
 }
@@ -21,6 +25,7 @@
   --bodyBg: var(--customDark);
   --headerStickedBg: var(--shadowColor2);
   --heroBg: var(--customBlueTab);
+  --heroBg2: var(--transparent);
   --footerBg: var(--transparent);
   --footerColor: var(--lightGray);
 
@@ -31,6 +36,9 @@
 
   --button2: var(--transparent);
   --button2Hover: var(--customGreen);
+
+  --spinner: var(--white);
+  --spinnerHover: var(--customGreen);
 
   --shadow: var(--shadowColor2);
   --modeIconColor: var(--day);

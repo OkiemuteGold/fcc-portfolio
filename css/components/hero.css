@@ -1,25 +1,34 @@
-#hero {
+#welcome-section {
   display: flex;
   align-items: center;
-  height: 600px;
-  /* background: #fff; */
-  background: var(--heroBg);
+  /* height: 420px; */
+  /* background: var(--heroBg); */
+
+  /* based on fcc requirement */
+  margin-top: -80px;
+  height: 100vh;
+  background: var(--heroBg2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* based on fcc requirement */
+
   border-radius: 2px;
 }
 
-#hero .content {
+#welcome-section .content {
   max-width: 800px;
   padding: 50px 150px;
 }
 
-#hero .content > span {
+#welcome-section .content > span {
   padding-left: 5.5px;
   font-size: var(--fontPara);
   position: relative;
   color: var(--customGreen);
 }
 
-#hero .content h1 {
+#welcome-section .content h1 {
   /* font-size: clamp(40px, 8vw, 80px); */
   font-size: 4.5rem;
   font-weight: 600;
@@ -31,7 +40,7 @@
   color: var(--title);
 }
 
-#hero .content h1 span:last-child {
+#welcome-section .content h1 span:last-child {
   font-size: 4rem;
   color: var(--textColor);
   text-transform: initial;
@@ -40,80 +49,88 @@
   letter-spacing: var(--letterSpaceSm);
 }
 
-#hero .content p {
+#welcome-section .content p {
   font-size: var(--fontPara);
   max-width: 520px;
   line-height: 26px;
   letter-spacing: var(--letterSpaceSm);
 }
 
-#hero .content .buttons {
+#welcome-section .content .buttons {
   margin-top: 50px;
 }
 
 @media screen and (max-width: 1025px) {
-  #hero {
+  #welcome-section {
     max-width: 1000px;
     margin: auto;
   }
 
-  #hero .content h1 {
+  #welcome-section .content h1 {
     font-size: 4rem;
     line-height: 70px;
   }
 
-  #hero .content h1 span:last-child {
+  #welcome-section .content h1 span:last-child {
     font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 769px) {
-  #hero {
+  #welcome-section {
     justify-content: center;
   }
 
-  #hero .content {
+  #welcome-section .content {
     max-width: 100%;
     padding: 0px 100px 30px;
   }
 
-  #hero .content h1 {
+  #welcome-section .content h1 {
     font-size: 3.5rem;
     line-height: 55px;
   }
 
-  #hero .content h1 span:last-child {
+  #welcome-section .content h1 span:last-child {
     font-size: 2.85rem;
   }
 
-  #hero .content p {
+  #welcome-section .content p {
     max-width: 420px;
   }
 }
 
 @media screen and (max-width: 660px) {
-  #hero .content {
+  #welcome-section .content {
     padding: 0px 20px 30px;
   }
 
-  #hero .content h1 {
+  #welcome-section .content h1 {
     font-size: 2.85rem;
     line-height: initial;
   }
 
-  #hero .content h1 span:last-child {
+  #welcome-section .content h1 span:last-child {
     font-size: 2.5rem;
     margin-top: 15px;
   }
 }
 
+@media screen and (max-width: 426px) {
+  #welcome-section .content .btn {
+    min-width: 95px;
+    padding: 10px;
+    font-size: var(--fontSmall);
+  }
+}
+
 @media screen and (max-width: 321px) {
-  #hero .content h1 {
+  #welcome-section .content h1 {
     font-size: 2.3rem;
     letter-spacing: var(--letterSpaceSm);
   }
 
-  #hero .content h1 span:last-child {
+  #welcome-section .content h1 span:last-child {
     font-size: 2rem;
   }
 }

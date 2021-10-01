@@ -2,19 +2,24 @@ jQuery(document).ready(function ($) {
 
     /** header styled on scroll **/
     let prevScrollPosition = window.pageYOffset;
-    let headerContainer = document.querySelector(".header-container");
+    // let headerContainer = document.querySelector(".header-container");
     let header = document.getElementById("header");
 
     window.onscroll = () => {
         let currentScrollPosition = window.pageYOffset;
 
-        if (prevScrollPosition > currentScrollPosition) {
-            headerContainer.style.top = "0";
-            header.classList.add("sticked");
-        } else {
-            headerContainer.style.top = `-${header.offsetHeight}px`;
-            header.classList.remove("sticked");
+        // if (prevScrollPosition > currentScrollPosition) {
+        //     headerContainer.style.top = "0";
+        //     header.classList.add("sticked");
+        // } else {
+        //     headerContainer.style.top = `-${header.offsetHeight}px`;
+        //     header.classList.remove("sticked");
+        // }
+
+        if (prevScrollPosition < currentScrollPosition) {
+            header.classList.add("sticked"); //using static top only, no extra
         }
+
         prevScrollPosition = currentScrollPosition;
 
         if (prevScrollPosition === 0) {
@@ -22,16 +27,16 @@ jQuery(document).ready(function ($) {
         }
     };
 
-    /** toggle navbar **/
-    let navbar = document.getElementById("navbar");
+    /** toggle nav **/
+    let nav = document.getElementById("nav");
     let toggler = document.getElementById("mobile-menu-toggler");
     let overlay = document.querySelector(".overlay");
 
     toggler.addEventListener("click", function () {
-        if (navbar.classList.contains("show-nav")) {
-            navbar.classList.remove("show-nav");
+        if (nav.classList.contains("show-nav")) {
+            nav.classList.remove("show-nav");
         } else {
-            navbar.classList.add("show-nav");
+            nav.classList.add("show-nav");
         }
 
         if (overlay.classList.contains("display-block")) {
@@ -131,34 +136,6 @@ jQuery(document).ready(function ($) {
         // console.log("loaded");
     }
 
-    /** isotope **/
-    $(window).on('load', function () {
-        var $container = $('.portfolioContainer');
-        var $filter = $('#filter');
-        $container.isotope({
-            filter: '*',
-            layoutMode: 'masonry',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear'
-            }
-        });
-        $filter.find('a').click(function () {
-            var selector = $(this).attr('data-filter');
-            $filter.find('a').removeClass('active');
-            $(this).addClass('active');
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    animationDuration: 750,
-                    easing: 'linear',
-                    queue: false,
-                }
-            });
-            return false;
-        });
-    });
-
     /** nav-tab toggle **/
     // import { workPlaces } from "./work-places";
     var id = '1';
@@ -248,4 +225,22 @@ jQuery(document).ready(function ($) {
     });
 
     toggleWorkPlace(id);
+
+    /*---- Load More Items -----*/
+    function viewMore(viewMoreBtn, loadedItem) {
+        $(viewMoreBtn).on('click', function (e) {
+            e.preventDefault();
+
+            $(".spinner").css("display", "inline-block");
+
+            setTimeout(() => {
+                $(".spinner").css("display", "none");
+
+                $(this).fadeOut("slow");
+                $(loadedItem).fadeIn("slow");
+            }, 1300);
+        })
+    }
+
+    viewMore('.viewMoreProjects', '.project-item.hidden');
 });

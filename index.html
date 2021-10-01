@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta name="application-name" content="Personal Portfolio Website" />
+    <meta name="author" content="Okiemute Gold" />
+    <meta name="keywords" content="Personal Portfolio, Navigation, Header, About, Okiemute, Gold, Frontend, Developer, Software, Project, Contact, Work, Places, Web, HTML, CSS, Bootstrap, Sass, SCSS, jQuery, Vue, JavaScript, ES6, Node, Freelance, Oxford, Mentor, Tutor, Weather, Quiz, Technical documentation, Product" />
+
     <meta name="description"
         content="Frontend Developer & Social Innovation Enthusiast. Experienced with responsive designs and semantics. Able to quickly grasp new software development fundamentals, adapt to new roles and collaborate in a team." />
 
+    <meta property="og:url" content="https://okiemute-portfolio.netlify.app/" />
     <meta property="og:title" content="Okiemute Gold | Frontend Developer" />
     <meta property="og:description"
         content="Personal Portfolio | I create innovative solutions for smooth user experience, ensuring high functionality, while paying attention to details." />
@@ -32,7 +37,7 @@
 <body>
     <div class="overlay"></div>
     <div id="wrapper">
-        <section class="header-container">
+        <section id="navbar" class="header-container">
             <header id="header">
                 <a href="#wrapper" class="header-logo" aria-label="logo">
                     <!-- <img id="header-img" src="image/logo.svg" alt="logo" /> -->
@@ -40,7 +45,7 @@
                         <span>O</span><span>G</span> 
                     /<i class="fas fa-angle-right brackets"></i>
                 </a>
-                <nav id="navbar" aria-roledescription="navigation">
+                <nav id="nav" class="navbar" aria-roledescription="navigation">
                     <li>
                         <a class="nav-link" href="#about">About</a>
                     </li>
@@ -65,7 +70,7 @@
             </header>
         </section>
 
-        <section id="hero" id="welcome-section" class="section-padd">
+        <section id="welcome-section">
             <div class="content">
                 <span class="sub-head">Hi, my name is</span>
 
@@ -196,13 +201,16 @@
                 </div> -->
             </section>
 
-            <section id="projects">
+            <section id="projects" class="pb-5">
                 <h2 class="title">Some of my Works</h2>
 
                 <div class="projects project-tile">
                     <div class="project-item">
                         <!-- <img src="image/project1.jpg" alt=""> -->
-                        <div class="project1 bg-img"></div>
+                        <div class="bg-img-container">
+                            <div class="project-personal-portfolio bg-img"></div>
+                        </div>
+
                         <div class="project-description">
                             <div class="project-title">
                                 <h3>Personal Portfolio</h3>
@@ -214,7 +222,46 @@
                         </div>
                     </div>
                     <div class="project-item">
-                        <div class="project1 bg-img"></div>
+                        <div class="bg-img-container">
+                            <div class="project-weather-js bg-img"></div>
+                        </div>
+                    
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h3>Weather App (Vanilla js)</h3>
+                            </div>
+                            <p>
+                                A weather application made with HTML, CSS and JavaScript. App allows user search city weather through voice
+                                or direct input. And have the result <strong>read out to them</strong>. It also has PWA setup
+                            </p>
+                    
+                            <a href="https://weather-man-app.netlify.app/" class="view-project-button" target="_blank">View project</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="bg-img-container">
+                            <div class="project-shopify-int-challenge bg-img"></div>
+                        </div>
+                    
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h3>Shopify Internship Challenge</h3>
+                            </div>
+                            <p>
+                                Shopify Internship Challenge to build an application with React js, that fetches data from the NASA free
+                                API. User should be able to like images. I replicated this in Vue js
+                            </p>
+                    
+                            <a href="https://shopify-intern.netlify.app/" class="view-project-button" target="_blank">View
+                                project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="bg-img-container">
+                            <div class="project-tech-doc bg-img"></div>
+                        </div>
+                        
                         <div class="project-description">
                             <div class="project-title">
                                 <h3>Technical documentation page</h3>
@@ -226,7 +273,10 @@
                         </div>
                     </div>
                     <div class="project-item">
-                        <div class="project3 bg-img"></div>
+                        <div class="bg-img-container">
+                            <div class="project-product-landing bg-img"></div>
+                        </div>
+                        
                         <div class="project-description">
                             <div class="project-title">
                                 <h3>Product landing page</h3>
@@ -239,7 +289,10 @@
                         </div>
                     </div>
                     <div class="project-item">
-                        <div class="project3 bg-img"></div>
+                        <div class="bg-img-container">
+                            <div class="project-survey-form bg-img"></div>
+                        </div>
+                        
                         <div class="project-description">
                             <div class="project-title">
                                 <h3>Survey Form</h3>
@@ -251,8 +304,12 @@
                             <a href="https://fcc-survey-form1.netlify.app/" class="view-project-button" target="_blank">View project</a>
                         </div>
                     </div>
-                    <div class="project-item">
-                        <div class="project3 bg-img"></div>
+
+                    <div class="project-item hidden">
+                        <div class="bg-img-container">
+                            <div class="project-tribute bg-img"></div>
+                        </div>
+                        
                         <div class="project-description">
                             <div class="project-title">
                                 <h3>Tribute page</h3>
@@ -266,26 +323,14 @@
                                 project</a>
                         </div>
                     </div>
-                    <div class="project-item">
-                        <div class="project3 bg-img"></div>
-                        <div class="project-description">
-                            <div class="project-title">
-                                <h3>Shopify Internship Challenge</h3>
-                            </div>
-                            <p>
-                                Shopify Internship Challenge to build an application with React js, that fetches data from the NASA free API. User should be able to like images. I replicated this in Vue js
-                            </p>
-                    
-                            <a href="https://shopify-intern.netlify.app/" class="view-project-button" target="_blank">View
-                                project</a>
+                    <div class="project-item hidden">
+                        <div class="bg-img-container">
+                            <div class="project-tosdis-temp bg-img"></div>
                         </div>
-                    </div>
-                    <div class="project-item">
-                        <!-- <img src="image/project1.jpg" alt=""> -->
-                        <div class="project1 bg-img"></div>
+                        
                         <div class="project-description">
                             <div class="project-title">
-                                <h3>Tosdis Web Template</h3>
+                                <h3>Tosdis Template (Freelance)</h3>
                             </div>
                             <p>
                                 A fully responsiveness Crypto currency template made with HTML, CSS, Bootstrap and some JavaScript
@@ -293,8 +338,11 @@
                             <a href="https://tosdis.netlify.app/" class="view-project-button" target="_blank">View Project</a>
                         </div>
                     </div>
-                    <div class="project-item">
-                        <div class="project3 bg-img"></div>
+                    <div class="project-item hidden">
+                        <div class="bg-img-container">
+                            <div class="project-weight-conv bg-img"></div>
+                        </div>
+                        
                         <div class="project-description">
                             <div class="project-title">
                                 <h3>Weight Converter</h3>
@@ -306,21 +354,12 @@
                             <a href="https://weight-conv.netlify.app/" class="view-project-button" target="_blank">View project</a>
                         </div>
                     </div>
-                    <div class="project-item">
-                        <div class="project3 bg-img"></div>
-                        <div class="project-description">
-                            <div class="project-title">
-                                <h3>Weather App (Vanilla js)</h3>
-                            </div>
-                            <p>
-                                A weather application made with HTML, CSS and JavaScript. App allows user search city weather through voice or direct input. And has PWA setup
-                            </p>
-
-                            <a href="https://weather-man-app.netlify.app/" class="view-project-button" target="_blank">View project</a>
+                    
+                    <div class="project-item hidden">
+                        <div class="bg-img-container">
+                            <div class="project-weather-vue bg-img"></div>
                         </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project3 bg-img"></div>
+                        
                         <div class="project-description">
                             <div class="project-title">
                                 <h3>Weather App (Vue js)</h3>
@@ -332,8 +371,11 @@
                             <a href="https://weather-check-vue.netlify.app/" class="view-project-button" target="_blank">View project</a>
                         </div>
                     </div>
-                    <div class="project-item">
-                        <div class="project3 bg-img"></div>
+                    <div class="project-item hidden">
+                        <div class="bg-img-container">
+                            <div class="project-quiz-vue bg-img"></div>
+                        </div>
+                        
                         <div class="project-description">
                             <div class="project-title">
                                 <h3>Quiz App (Vue js)</h3>
@@ -345,14 +387,30 @@
                             <a href="https://multichoice-quiz.netlify.app/" class="view-project-button" target="_blank">View project</a>
                         </div>
                     </div>
+                    <div class="project-item hidden">
+                        <div class="bg-img-container">
+                            <div class="project-hero bg-img"></div>
+                        </div>
+                        
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h3>Hero (Freelance)</h3>
+                            </div>
+                            <p>
+                                Design of parts of page (header and hero) for a client
+                            </p>
+                            <a href="javascript: void()" class="view-project-button" target="_blank">View Project</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="view-more-projects">
-                    <a href="javascript: void()" class="btn">View More Projects!</a>
+                    <a href="javascript: void()" class="btn viewMoreProjects">View More Projects <span class="spinner"></span></a>
+                    
                 </div>
             </section>
 
-            <section id="contact">
+            <section id="contact" class="pt-5">
                 <div class="contact-content text-center">
                     <span class="sub-head">What’s Next?</span>
 

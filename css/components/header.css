@@ -11,6 +11,10 @@
   -moz-transition: var(--transition);
   -o-transition: var(--transition);
   -ms-transition: var(--transition);
+
+  /* based on fcc requirement */
+  background: var(--headerStickedBg);
+  /* based on fcc requirement */
 }
 
 #header {
@@ -70,12 +74,12 @@
   text-shadow: 1px 1.5px 1px #f4f4f4;
 }
 
-#navbar {
+.navbar {
   display: flex;
   align-items: center;
 }
 
-#navbar li:not(:first-child) {
+.navbar li:not(:first-child) {
   margin-left: 12px;
 }
 
@@ -107,7 +111,7 @@
   transition: var(--transition);
 }
 
-#navbar li:hover > .nav-link:after {
+.navbar li:hover > .nav-link:after {
   /* display: block; */
   width: 40%;
 }
@@ -166,7 +170,7 @@
     font-size: 2.25rem;
   }
 
-  #navbar {
+  .navbar {
     position: fixed;
     height: 100vh;
     width: 0;
@@ -194,7 +198,7 @@
     box-shadow: none !important;
   }
 
-  #navbar li {
+  .navbar li {
     margin: 20px 0 !important;
     text-align: center;
     line-height: 30px;
