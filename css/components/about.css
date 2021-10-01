@@ -20,18 +20,38 @@
 
 .about-image {
   max-width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .about-image::before {
   width: 100%;
-  height: 235px;
+  height: 300px;
   content: "";
   position: absolute;
   left: 15px;
   top: 15px;
-  border: 2px dotted var(--textColor);
+  border: 2px solid var(--textColor);
   border-radius: 5px;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgba(155, 228, 10, 0.35));
+  filter: drop-shadow(0 0 0.75rem rgba(155, 228, 10, 0.35));
   z-index: -1;
+  transition: var(--transition);
+}
+
+.about-image::after {
+  width: 100%;
+  height: 300px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  background: rgba(155, 228, 10, 0.35);
+  -webkit-filter: contrast(80%) brightness(80%) saturate(80%);
+  filter: contrast(80%) brightness(80%) saturate(80%);
+  z-index: 1;
   transition: var(--transition);
 }
 
@@ -42,8 +62,14 @@
   top: 13px;
 }
 
+.about-image:hover::after {
+  background: transparent;
+}
+
 .about-image img {
   border-radius: 5px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .technologies {
@@ -113,8 +139,14 @@ form #email:valid {
     max-width: 480px;
   }
 
-  .about-image::before {
-    height: 230px;
+  .about-image {
+    max-width: 340px;
+  }
+
+  .about-image,
+  .about-image::before,
+  .about-image::after {
+    height: 240px;
   }
 }
 
@@ -134,8 +166,8 @@ form #email:valid {
     padding: 0 !important;
   }
 
-  .about-image::before {
-    height: 240px;
+  .about-image::after {
+    height: 100%;
   }
 }
 

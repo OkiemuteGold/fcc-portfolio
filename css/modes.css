@@ -2,7 +2,6 @@
   --bodyBg: var(--customWhite);
   --headerStickedBg: rgba(0, 0, 0, 0.055);
   --heroBg: var(--white);
-  --heroBg2: var(--heroBgImg);
   --footerBg: var(--lightestGray);
   --footerColor: var(--black);
 
@@ -25,7 +24,6 @@
   --bodyBg: var(--customDark);
   --headerStickedBg: var(--shadowColor2);
   --heroBg: var(--customBlueTab);
-  --heroBg2: var(--transparent);
   --footerBg: var(--transparent);
   --footerColor: var(--lightGray);
 

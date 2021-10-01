@@ -7,10 +7,7 @@
   /* based on fcc requirement */
   margin-top: -80px;
   height: 100vh;
-  background: var(--heroBg2);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: transparent;
   /* based on fcc requirement */
 
   border-radius: 2px;
