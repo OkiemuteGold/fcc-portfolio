@@ -183,10 +183,10 @@ jQuery(document).ready(function ($) {
                 let description;
                 (workPlace.workDescription).forEach(desc => {
                     description = desc
-                    console.log(description);
+                    // console.log(description);
                 });
                 // for (var i = 0; i < description.length; i++) {
-                console.log(description);
+                // console.log(description);
 
                 htmlOutput += `
                         <div class="work-place-item">
