@@ -66,6 +66,9 @@ jQuery(document).ready(function ($) {
             document.querySelector(this.getAttribute("href")).scrollIntoView({
                 behavior: "smooth",
             });
+
+            $(".navbar a").removeClass("active");
+            $(this).addClass("active");
         });
     });
 
@@ -147,7 +150,7 @@ jQuery(document).ready(function ($) {
             place: "@ Oxford Octopus",
             date: "February 2021 - Present",
             workDescription: [
-                "Worked with mockups to develop websites, web apps and progressive web apps with HTML5, CSS3, Bootstrap, SCSS, JavaScript, jQuery, and Vue.js. Collaborated closely with the team to support projects during all phases of delivery. Ensured website/App performance is optimized and rectified front-end-related issues. Identified innovative ideas and proof of concepts according to project requirements. Provided Product Support Services to clients/users, alongside other team members"
+                "Worked with mockups to develop websites, web apps and progressive web apps with HTML5, CSS3, Bootstrap, SCSS, JavaScript, jQuery, and Vue.js", "Collaborated closely with the team to support projects during all phases of delivery.", "Ensured website/App performance is optimized and rectified front-end-related issues.", "Identified innovative ideas and proof of concepts according to project requirements.", "Provided Product Support Services to clients/users, alongside other team members",
             ]
         },
         {
@@ -156,7 +159,7 @@ jQuery(document).ready(function ($) {
             place: "@ Freelance",
             date: "August 2021 - Present",
             workDescription: [
-                "Built web pages from UI design mockups using technologies such as HTML5, CSS3, Bootstrap, JavaScript, jQuery. Identified innovative ideas and proof of concepts according to project requirements"
+                "Built web pages from UI design mockups using technologies such as HTML5, CSS3, Bootstrap, JavaScript, jQuery.", "Identified innovative ideas and proof of concepts according to project requirements"
             ]
         },
         {
@@ -165,7 +168,7 @@ jQuery(document).ready(function ($) {
             place: "Mentor",
             date: "June 2021 - Present",
             workDescription: [
-                "Helped to mentor two interns on HTML5, CSS3, Bootstrap, and JavaScript, and worked with them to build some cool web templates",
+                "Helped to mentor two interns on HTML5, CSS3, Bootstrap, and JavaScript", "worked with them to build some cool web templates",
             ]
         }
     ];
@@ -180,29 +183,19 @@ jQuery(document).ready(function ($) {
         if (allWorkPlaces.length > 0) {
 
             allWorkPlaces.forEach((workPlace) => {
-                let description;
-                (workPlace.workDescription).forEach(desc => {
-                    description = desc
-                    // console.log(description);
-                });
-                // for (var i = 0; i < description.length; i++) {
-                // console.log(description);
-
                 htmlOutput += `
-                        <div class="work-place-item">
-                            <h3>${workPlace.role} <span>${workPlace.place}</span></h3>
-                            <span class="date">${workPlace.date}</span>
-                            <ul class="technology list">
-                                <li>${description}</li>
-                            </ul>
-                        </div>
-                    `;
-                // }
+                    <div class="work-place-item">
+                        <h3>${workPlace.role} <span>${workPlace.place}</span></h3>
+                        <span class="date">${workPlace.date}</span>
+                        <ul class="technology list">
+                            ${(workPlace.workDescription).map(description => { return `<li>${description}</li>` })}
+                        </ul>
+                    </div>
+                `;
             });
 
             setTimeout(() => {
                 $('.work-places .work-place-item').fadeIn('slow');
-
                 document.querySelector('.work-places').innerHTML = htmlOutput;
             }, 500);
         }

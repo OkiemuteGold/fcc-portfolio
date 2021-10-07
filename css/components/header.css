@@ -29,9 +29,9 @@
 
 #header.sticked {
   background: var(--headerStickedBg);
-  box-shadow: inset 0 0.5rem 2.5rem rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 0.5rem 2rem rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: inset 0 0.5rem 2rem rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0.5rem 2.5rem rgba(0, 0, 0, 0.085);
+  -moz-box-shadow: inset 0 0.5rem 2rem rgba(0, 0, 0, 0.085);
+  -webkit-box-shadow: inset 0 0.5rem 2rem rgba(0, 0, 0, 0.085);
 
   height: 65px;
   border-radius: 0 0 5px 5px;
@@ -178,7 +178,8 @@
     bottom: 0px;
     right: -100px;
     padding: 0;
-    background: var(--black);
+    background: var(--shadowColor2);
+    backdrop-filter: blur(20px);
     box-shadow: -10px 0px 30px -15px var(--gray);
     transform: translateX(0vw);
 
@@ -210,10 +211,16 @@
     font-size: var(--fontPara);
   }
 
-  .nav-link:hover {
+  .nav-link:hover, .active {
     background: rgba(250, 250, 250, 0.15);
     color: #f4f4f4;
     border-radius: 5px;
+  }
+
+  .header-logo {
+    background: initial;
+    color: initial;
+    border-radius: initial;
   }
 
   .nav-link:after {
