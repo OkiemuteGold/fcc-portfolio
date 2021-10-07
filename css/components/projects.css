@@ -29,7 +29,12 @@
   width: 100%;
   height: 100%;
   border-radius: 5px 5px 0 0;
+  transition: var(--transition);
 }
+
+/* .project-item:hover .bg-img {
+  background-size: contain;
+} */
 
 .project-personal-portfolio {
   background-image: url("/image/projects/portfolio.png");
@@ -67,8 +72,35 @@
 .project-quiz-vue {
   background-image: url("/image/projects/quiz.png");
 }
-.project-hero {
-  background-image: url("/image/projects/only-hero.png");
+.project-solrazr {
+  background-image: url("/image/projects/solrazr.png");
+}
+
+/* bg hover ----- */
+.project-item:hover .project-personal-portfolio {
+  background-image: url("/image/projects/sub-proj/portfolio_day.png");
+}
+/* .project-item:hover .project-weather-js {} */
+/* .project-item:hover .project-shopify-int-challenge {} */
+
+.project-item:hover .project-tech-doc {
+  background-image: url("/image/projects/sub-proj/tech-doc_2.png");
+}
+.project-item:hover .project-product-landing {
+  background-image: url("/image/projects/sub-proj/product-landing_2.png");
+}
+/* .project-item:hover .project-survey-form {} */
+
+/* .project-item:hover .project-tribute {} */
+.project-item:hover .project-tosdis-temp {
+  background-image: url("/image/projects/sub-proj/tosdis_2.png");
+}
+/* .project-item:hover .project-weight-conv {} */
+
+/* .project-item:hover .project-weather-vue {}
+.project-item:hover .project-quiz-vue {} */
+.project-item:hover .project-solrazr {
+  background-image: url("/image/projects/sub-proj/solrazr_2.png");
 }
 
 .project-description {
