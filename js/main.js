@@ -183,15 +183,18 @@ jQuery(document).ready(function ($) {
         if (allWorkPlaces.length > 0) {
 
             allWorkPlaces.forEach((workPlace) => {
+
                 htmlOutput += `
                     <div class="work-place-item">
                         <h3>${workPlace.role} <span>${workPlace.place}</span></h3>
                         <span class="date">${workPlace.date}</span>
-                        <ul class="technology list">
-                            ${(workPlace.workDescription).map(description => { return `<li>${description}</li>` })}
-                        </ul>
-                    </div>
-                `;
+                        <ul class="technology list">`;
+
+                (workPlace.workDescription).forEach((val) => {
+                    htmlOutput += `<li>${val}</li>`;
+                });
+
+                htmlOutput += `</ul></div>`;
             });
 
             setTimeout(() => {

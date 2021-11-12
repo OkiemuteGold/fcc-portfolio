@@ -9,14 +9,18 @@
 
 #experience .experience-content {
   background: var(--lightestGray);
-  border-radius: 80px 0px 80px 0px;
-  padding: 70px 60px;
+  border-radius: 70px 0px 70px 0px;
+  padding: 70px 50px;
+}
+
+#experience .experience-content .title {
+  color: var(--black);
 }
 
 .work-place-item {
   position: relative;
-  margin-left: 20px;
-  color: var(--textColor);
+  margin-left: 12px;
+  color: var(--gray);
 }
 
 .work-place-item h3 {
@@ -52,12 +56,12 @@
 }
 
 .experience-content .nav-tab li {
-  font-size: var(--fontSmall);
+  font-size: 13px;
   font-weight: 500;
   color: var(--gray);
   letter-spacing: var(--letterSpaceLg);
 
-  padding: 6px 10px;
+  padding: 6px 3px 6px 10px;
   line-height: 26px;
   position: relative;
 }
@@ -65,19 +69,21 @@
 .experience-content .nav-tab li,
 .experience-content .nav-tab li.active {
   transition: var(--transition);
+  border-radius: 0;
 }
 
 .experience-content .nav-tab li:hover,
 .experience-content .nav-tab li.active {
   background: var(--customBlueTab);
   color: #fff;
+  font-weight: 600;
 }
 
 .experience-content .nav-tab li.active::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -3px;
+  left: -2.5px;
   height: 100%;
   width: 4px;
   background: var(--customBlue);
@@ -92,26 +98,30 @@
   cursor: default;
 }
 
-@media screen and (min-width: 680px) {
-  #experience .experience-content .title {
-    color: var(--black);
-  }
-
-  .work-place-item {
-    color: var(--gray);
-  }
-}
-
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 901px) {
   #experience {
     padding-left: 80px;
     padding-right: 80px;
   }
 
   #experience .experience-content {
+    padding: 70px 35px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #experience .experience-content {
     background: none;
-    border-radius: none;
+    border-radius: 0;
     padding: 60px 0px 0;
+  }
+
+   #experience .experience-content .title {
+    color: var(--title);
+  }
+
+  .work-place-item {
+    color: var(--textColor);
   }
 }
 
