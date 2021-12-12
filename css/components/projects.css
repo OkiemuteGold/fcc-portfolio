@@ -39,6 +39,12 @@
 .project-personal-portfolio {
   background-image: url("/image/projects/portfolio.png");
 }
+
+.project-stock-crypt {
+  /* background-image: url("/image/projects/portfolio.png"); */
+  background-color: #ccc;
+}
+
 .project-weather-js {
   background-image: url("/image/projects/weather-app-js.png");
 }
@@ -80,6 +86,9 @@
 .project-item:hover .project-personal-portfolio {
   background-image: url("/image/projects/sub-proj/portfolio_day.png");
 }
+
+/* .project-item:hover .project-stock-crypt {} */
+
 /* .project-item:hover .project-weather-js {} */
 /* .project-item:hover .project-shopify-int-challenge {} */
 

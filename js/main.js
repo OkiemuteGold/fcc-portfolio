@@ -146,11 +146,45 @@ jQuery(document).ready(function ($) {
     var workPlaces = [
         {
             id: "1",
-            role: "Frontend Developer",
+            role: "Software Developer",
             place: "@ Oxford Octopus",
             date: "February 2021 - Present",
+            // works: `
+            //     <a href="https://oxfordvest.com/" target="_blank">Oxfordvest</a>,
+            // `,
+            works: [
+                {
+                    name: "Oxfordvest,",
+                    link: "https://oxfordvest.com/"
+                },
+                {
+                    name: "Oxford Holdings,",
+                    link: "http://oxfordholdingsng.com/"
+                },
+                {
+                    name: "OIGNG,",
+                    link: "https://oig.ng/"
+                },
+                {
+                    name: "Oxford Octopus,",
+                    link: "https://oxfordoctopus.com/"
+                },
+                {
+                    name: "Foxpay,",
+                    link: "https://foxpaylanding.netlify.app/"
+                },
+                {
+                    name: "Oxford Craighton Schools",
+                    link: "https://oxfordcraightonschools.com/"
+                }
+            ],
             workDescription: [
-                "Worked with mockups to develop websites, web apps and progressive web apps with HTML5, CSS3, Bootstrap, SCSS, JavaScript, jQuery, and Vue.js", "Collaborated closely with the team to support projects during all phases of delivery.", "Ensured website/App performance is optimized and rectified front-end-related issues.", "Identified innovative ideas and proof of concepts according to project requirements.", "Provided Product Support Services to clients/users, alongside other team members",
+                "Develop websites, web apps and progressive web apps with HTML5, CSS3, Bootstrap, SCSS, JavaScript, jQuery, and Vue.js.",
+                "Collaborated closely with the team to support projects during all phases of delivery.",
+                "Ensured website/app performance is optimized and rectified front-end-related issues.",
+                "Identified innovative ideas and proof of concepts according to project requirements.",
+                "Maintained an organized workflow using project management tool (e.g. GitHub).",
+                "Provided Product Support Services to clients/users, alongside other team members."
             ]
         },
         {
@@ -158,8 +192,32 @@ jQuery(document).ready(function ($) {
             role: "Frontend Developer",
             place: "@ Freelance",
             date: "August 2021 - Present",
+            works: [
+                {
+                    name: "Tosdis,",
+                    link: "https://tosdis.netlify.app/"
+                },
+                {
+                    name: "Solrazr,",
+                    link: "https://solrazr1.netlify.app/"
+                },
+                {
+                    name: "Pocket Arena,",
+                    link: "https://pocket-arena.netlify.app/"
+                },
+                {
+                    name: "BIP Mnemonic,",
+                    link: "https://bip-mnemonic.netlify.app/"
+                },
+                {
+                    name: "Wallet Connect",
+                    link: "https://walletconnect1.netlify.app/"
+                },
+            ],
             workDescription: [
-                "Built web pages from UI design mockups using technologies such as HTML5, CSS3, Bootstrap, JavaScript, jQuery.", "Identified innovative ideas and proof of concepts according to project requirements"
+                "Built web pages from UI design mockups using technologies such as HTML5, CSS3, Bootstrap, JavaScript, jQuery.",
+                "Collaborated closely with clients during all phases of delivery, communicating and making necessary improvements to clients' initial product ideas.",
+                "Identified innovative ideas and proof of concepts according to project requirements."
             ]
         },
         {
@@ -168,7 +226,8 @@ jQuery(document).ready(function ($) {
             place: "Mentor",
             date: "June 2021 - Present",
             workDescription: [
-                "Helped to mentor two interns on HTML5, CSS3, Bootstrap, and JavaScript", "worked with them to build some cool web templates",
+                "Helped to mentor two interns on HTML5, CSS3, Bootstrap, and JavaScript.",
+                "Worked with them to build some web templates that improved their coding skills.",
             ]
         }
     ];
@@ -178,28 +237,45 @@ jQuery(document).ready(function ($) {
             return workPlace.id === id;
         });
 
-        let htmlOutput = "";
+        let workPlaceOutput = "";
 
         if (allWorkPlaces.length > 0) {
 
             allWorkPlaces.forEach((workPlace) => {
 
-                htmlOutput += `
+                workPlaceOutput += `
                     <div class="work-place-item">
                         <h3>${workPlace.role} <span>${workPlace.place}</span></h3>
                         <span class="date">${workPlace.date}</span>
                         <ul class="technology list">`;
 
                 (workPlace.workDescription).forEach((val) => {
-                    htmlOutput += `<li>${val}</li>`;
+                    workPlaceOutput += `<li>${val}</li>`;
                 });
 
-                htmlOutput += `</ul></div>`;
+                workPlaceOutput += `</ul>`;
+
+                if (workPlace.works) {
+                    workPlaceOutput += `
+                        <h4 class="mt-4 mb-2">Works/Ongoing projects: </h4>
+                        <div class="works">
+                    `;
+
+                    (workPlace.works).forEach((work) => {
+                        workPlaceOutput += `
+                            <a href="${work.link}" target="_blank">${work.name}</a>
+                        `;
+                    });
+
+                    workPlaceOutput += `</div>`;
+                }
+
+                workPlaceOutput += `</div>`;
             });
 
             setTimeout(() => {
                 $('.work-places .work-place-item').fadeIn('slow');
-                document.querySelector('.work-places').innerHTML = htmlOutput;
+                document.querySelector('.work-places').innerHTML = workPlaceOutput;
             }, 500);
         }
     }
