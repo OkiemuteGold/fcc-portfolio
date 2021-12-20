@@ -171,7 +171,7 @@ jQuery(document).ready(function ($) {
                 },
                 {
                     name: "Foxpay,",
-                    link: "https://foxpaylanding.netlify.app/"
+                    link: "https://https://foxpay.ng/"
                 },
                 {
                     name: "Oxford Craighton Schools",
@@ -179,8 +179,8 @@ jQuery(document).ready(function ($) {
                 }
             ],
             workDescription: [
-                "Develop websites, web apps and progressive web apps with HTML5, CSS3, Bootstrap, SCSS, JavaScript, jQuery, and Vue.js.",
-                "Collaborated closely with the team to support projects during all phases of delivery.",
+                "Developed websites, web apps and progressive web apps with HTML5, CSS3, Bootstrap, SCSS, JavaScript, jQuery, and Vue.js.",
+                "Collaborated with the team to support projects during all phases of delivery.",
                 "Ensured website/app performance is optimized and rectified front-end-related issues.",
                 "Identified innovative ideas and proof of concepts according to project requirements.",
                 "Maintained an organized workflow using project management tool (e.g. GitHub).",
