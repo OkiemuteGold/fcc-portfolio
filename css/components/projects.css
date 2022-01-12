@@ -48,6 +48,10 @@
 .project-weather-js {
   background-image: url("/image/projects/weather-app-js.png");
 }
+
+.project-music-player-vue {
+  background-image: url("/image/projects/music-player-vue1.png");
+}
 .project-shopify-int-challenge {
   background-image: url("/image/projects/shopify-int-challenge.png");
 }
@@ -91,6 +95,10 @@
 
 /* .project-item:hover .project-weather-js {} */
 /* .project-item:hover .project-shopify-int-challenge {} */
+
+.project-item:hover .project-music-player-vue {
+  background-image: url("/image/projects/sub-proj/music-player-vue2.png");
+}
 
 .project-item:hover .project-tech-doc {
   background-image: url("/image/projects/sub-proj/tech-doc_2.png");
