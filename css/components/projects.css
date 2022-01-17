@@ -39,16 +39,17 @@
 .project-personal-portfolio {
   background-image: url("/image/projects/portfolio.png");
 }
-
 .project-stock-crypt {
-  /* background-image: url("/image/projects/portfolio.png"); */
-  background-color: #ccc;
+  /* background-color: #ccc; */
+  background-image: url("/image/projects/stock-crypt1.png");
 }
-
 .project-weather-js {
   background-image: url("/image/projects/weather-app-js.png");
 }
 
+.project-unsplash-clone {
+  background-image: url("/image/projects/unsplash-clone1.png");
+}
 .project-music-player-vue {
   background-image: url("/image/projects/music-player-vue1.png");
 }
@@ -59,43 +60,44 @@
 .project-tech-doc {
   background-image: url("/image/projects/tech-doc.png");
 }
-.project-product-landing {
-  background-image: url("/image/projects/product-landing.png");
-}
-.project-survey-form {
-  background-image: url("/image/projects/survey-form.png");
-}
-
-.project-tribute {
-  background-image: url("/image/projects/tribute.png");
-}
-.project-tosdis-temp {
-  background-image: url("/image/projects/tosdis.png");
-}
-.project-weight-conv {
-  background-image: url("/image/projects/weight-conv-js.png");
-}
-
 .project-weather-vue {
   background-image: url("/image/projects/weather-app-vue.png");
 }
 .project-quiz-vue {
   background-image: url("/image/projects/quiz.png");
 }
+
+.project-tosdis-temp {
+  background-image: url("/image/projects/tosdis.png");
+}
 .project-solrazr {
   background-image: url("/image/projects/solrazr.png");
+}
+.project-product-landing {
+  background-image: url("/image/projects/product-landing.png");
+}
+
+.project-survey-form {
+  background-image: url("/image/projects/survey-form.png");
+}
+.project-tribute {
+  background-image: url("/image/projects/tribute.png");
+}
+.project-weight-conv {
+  background-image: url("/image/projects/weight-conv-js.png");
 }
 
 /* bg hover ----- */
 .project-item:hover .project-personal-portfolio {
   background-image: url("/image/projects/sub-proj/portfolio_day.png");
 }
+.project-item:hover .project-stock-crypt {
+  background-image: url("/image/projects/sub-proj/stock-crypt2.png");
+}
 
-/* .project-item:hover .project-stock-crypt {} */
-
-/* .project-item:hover .project-weather-js {} */
-/* .project-item:hover .project-shopify-int-challenge {} */
-
+.project-item:hover .project-unsplash-clone {
+  background-image: url("/image/projects/sub-proj/unsplash-clone2.png");
+}
 .project-item:hover .project-music-player-vue {
   background-image: url("/image/projects/sub-proj/music-player-vue2.png");
 }
@@ -103,21 +105,15 @@
 .project-item:hover .project-tech-doc {
   background-image: url("/image/projects/sub-proj/tech-doc_2.png");
 }
-.project-item:hover .project-product-landing {
-  background-image: url("/image/projects/sub-proj/product-landing_2.png");
-}
-/* .project-item:hover .project-survey-form {} */
 
-/* .project-item:hover .project-tribute {} */
 .project-item:hover .project-tosdis-temp {
   background-image: url("/image/projects/sub-proj/tosdis_2.png");
 }
-/* .project-item:hover .project-weight-conv {} */
-
-/* .project-item:hover .project-weather-vue {}
-.project-item:hover .project-quiz-vue {} */
 .project-item:hover .project-solrazr {
   background-image: url("/image/projects/sub-proj/solrazr_2.png");
+}
+.project-item:hover .project-product-landing {
+  background-image: url("/image/projects/sub-proj/product-landing_2.png");
 }
 
 .project-description {
