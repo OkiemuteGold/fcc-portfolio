@@ -1,42 +1,17 @@
-/* @import url("./bootstrap-grid.min.css");
-@import url("./fontawesome.css");
-@import url("./fonts/fontUbuntu.css");
-@import url("./fonts/fontLato.css"); */
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
-
-/* @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;700&display=swap"); */
 
 /* header -------------------- */
 @import url("./components/header.css");
 
-/* social-icons -------------------- */
-@import url("./components/socials.css");
-
-/* contact-fixed -------------------- */
-@import url("./components/contact-fixed.css");
-
-/* hero -------------------- */
-@import url("./components/hero.css");
-
 /* about ------------- */
 @import url("./components/about.css");
-
-/* experience ------------- */
-@import url("./components/experience.css");
 
 /* projects ----------- */
 @import url("./components/projects.css");
 
 /* contact ----------- */
 @import url("./components/contact.css");
-
-/* footer ----------- */
-@import url("./components/footer.css");
-
-/* variables ----------- */
-@import url("./variables.css");
 
 /* modes ----------- */
 @import url("./modes.css");

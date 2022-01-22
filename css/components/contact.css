@@ -39,6 +39,126 @@
   border-color: rgb(130, 180, 30);
 }
 
+/* contact-fixed */
+.contact-fixed {
+  position: fixed;
+  width: 40px;
+  bottom: 0px;
+  right: 40px;
+  left: auto;
+  z-index: 1;
+}
+
+.email-wrapper {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  line-height: 22px;
+}
+
+.email-wrapper::after {
+  content: "";
+  display: block;
+  width: 0.75px;
+  height: 90px;
+  margin: 0px auto;
+  background: var(--customGreen);
+}
+
+.email-wrapper a {
+  font-size: 0.9rem;
+  font-family: var(--fontUbuntu);
+  margin: 20px auto;
+  padding: 10px;
+  color: var(--customBlue);
+  letter-spacing: var(--letterSpaceSm);
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+.contact-fixed a:hover {
+  transform: translateY(-5px);
+  color: var(--customGreen);
+}
+
+/* social-icons */
+.social-icons {
+  position: fixed;
+  width: 35px;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 1;
+}
+
+.social-icons::after {
+  content: "";
+  display: block;
+  width: 0.75px;
+  height: 90px;
+  margin: 0px auto;
+  background: var(--customGreen);
+}
+
+.social-icons ul {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  line-height: 22px;
+}
+
+.social-icons ul li:last-child {
+  margin-bottom: 20px;
+}
+
+.social-icons ul li a {
+  padding: 10px;
+  display: inline-block;
+  color: var(--customBlue);
+  position: relative;
+}
+
+.social-icons ul li a:hover {
+  transform: translateY(-4px);
+  color: var(--customGreen);
+}
+
+.social-icons svg {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  fill: none;
+}
+
+.stack-overflow path {
+  fill: var(--customBlue);
+}
+
+.stack-overflow polygon {
+  fill: var(--customBlue);
+}
+
+.stack-overflow a:hover path,
+.stack-overflow a:hover polygon {
+  fill: var(--customGreen);
+}
+
+@media screen and (max-width: 1025px) {
+  .contact-fixed {
+    width: 35px;
+    right: 20px;
+  }
+
+  .social-icons {
+    left: 20px;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .contact-content {
     padding: 30px 60px 60px;
@@ -47,6 +167,24 @@
   .contact-content h2 {
     font-size: var(--fontHead);
     letter-spacing: var(--letterSpaceLg);
+  }
+
+  .contact-fixed {
+    right: 10px;
+  }
+
+  .social-icons {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-fixed {
+    display: none;
+  }
+
+  .social-icons {
+    display: none;
   }
 }
 

@@ -2,19 +2,10 @@ jQuery(document).ready(function ($) {
 
     /** header styled on scroll **/
     let prevScrollPosition = window.pageYOffset;
-    // let headerContainer = document.querySelector(".header-container");
     let header = document.getElementById("header");
 
     window.onscroll = () => {
         let currentScrollPosition = window.pageYOffset;
-
-        // if (prevScrollPosition > currentScrollPosition) {
-        //     headerContainer.style.top = "0";
-        //     header.classList.add("sticked");
-        // } else {
-        //     headerContainer.style.top = `-${header.offsetHeight}px`;
-        //     header.classList.remove("sticked");
-        // }
 
         if (prevScrollPosition < currentScrollPosition) {
             header.classList.add("sticked"); //using static top only, no extra
@@ -136,7 +127,6 @@ jQuery(document).ready(function ($) {
     /** set default theme on load **/
     function setDefault() {
         body.className = "dayTheme";
-        // console.log("loaded");
     }
 
     /** nav-tab toggle **/
@@ -149,9 +139,6 @@ jQuery(document).ready(function ($) {
             role: "Software Developer",
             place: "@ Oxford Octopus",
             date: "February 2021 - Present",
-            // works: `
-            //     <a href="https://oxfordvest.com/" target="_blank">Oxfordvest</a>,
-            // `,
             works: [
                 {
                     name: "Oxfordvest,",
@@ -163,15 +150,18 @@ jQuery(document).ready(function ($) {
                 },
                 {
                     name: "OIGNG,",
-                    link: "https://oig.ng/"
-                },
-                {
-                    name: "Oxford Octopus,",
-                    link: "https://oxfordoctopus.com/"
+                    // link: "https://oig.ng/"
+                    link: "https://oigng.netlify.app/"
                 },
                 {
                     name: "Foxpay,",
-                    link: "https://https://foxpay.ng/"
+                    // link: "https://https://foxpay.ng/"
+                    link: "https://foxpaylanding.netlify.app/"
+                },
+                {
+                    name: "Oxford Octopus,",
+                    // link: "https://oxfordoctopus.com/"
+                    link: "https://oxfordoctopus.netlify.app/"
                 },
                 {
                     name: "Oxford Craighton Schools",
@@ -263,7 +253,7 @@ jQuery(document).ready(function ($) {
 
                     (workPlace.works).forEach((work) => {
                         workPlaceOutput += `
-                            <a href="${work.link}" target="_blank">${work.name}</a>
+                            <a href="${work.link}" target="_blank" rel="noopener">${work.name}</a>
                         `;
                     });
 

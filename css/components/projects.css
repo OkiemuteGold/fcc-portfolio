@@ -142,8 +142,6 @@
 
 .project-title .price svg {
   color: var(--customGreen);
-  /* height: 20px;
-  width: 20px; */
 }
 
 .project-title .price svg:hover {
@@ -182,8 +180,6 @@
   margin-right: 0 !important;
   color: var(--black) !important;
   font-size: var(--fontPara);
-  /* font-weight: 400;
-  font-family: var(--fontUbuntu); */
 }
 
 .view-more-projects .btn:hover,
@@ -226,6 +222,12 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
 

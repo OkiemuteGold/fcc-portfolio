@@ -59,8 +59,6 @@
 .about-image:hover::before {
   box-shadow: 0.5rem 0.5rem 1.75rem var(--shadow);
   transform: scale(0.985);
-  /* left: 13px;
-  top: 13px; */
 }
 
 .about-image:hover::after {
@@ -89,51 +87,123 @@
   letter-spacing: var(--letterSpaceLg);
 }
 
-/* form {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
+/* experiences */
+#experience {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-form #email {
-  min-width: 250px;
-  padding: 0.65rem 1rem;
-  border-radius: 5px;
+#experience .experience-content {
+  background: var(--lightestGray);
+  border-radius: 70px 0px 70px 0px;
+  padding: 70px 50px;
+}
+
+#experience .experience-content .title {
+  color: var(--black);
+}
+
+.work-place-item {
+  position: relative;
+  margin-left: 12px;
+  color: var(--gray);
+}
+
+.work-place-item h3 {
+  font-size: 20px;
+  font-family: var(--fontUbuntu);
+  margin-bottom: 5px;
+}
+
+.work-place-item h3 span {
+  color: var(--customGreen);
+}
+
+.work-place-item .date {
   font-size: 13px;
-  box-sizing: border-box;
-  border: 1px solid transparent;
-  transition: var(--transition);
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 1.5rem;
 }
 
-form #submit {
-  padding: 0.65rem 1rem;
-  min-width: 120px;
-  margin-left: 10px;
-  font-size: 13px;
-  background: var(--customBlue);
-  color: #fff;
-  outline: none;
-  border: 1px solid transparent;
-  border-radius: 5px;
+.work-place-item li,
+.work-place-item .works {
+  font-size: var(--fontSmall);
+  line-height: 22px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  letter-spacing: var(--letterSpaceSm);
 }
 
-form #submit:hover {
-  background: transparent;
-  border-color: var(--customBlue);
+.work-place-item li:last-child {
+  margin-bottom: 0px;
+}
+
+.work-place-item .works {
+  margin-bottom: 0;
+  word-spacing: var(--letterSpaceMd);
+}
+
+.work-place-item .works a {
+  color: var(--customBlueTab);
+}
+
+.work-place-item .works a:hover {
+  text-decoration: underline;
   color: var(--customBlue);
+}
+
+.experience-content .nav-tab {
+  height: max-content;
+  margin-bottom: 30px;
+  border-left: 1px solid var(--customBlueTab);
+  background: var(--lighterGray);
+}
+
+.experience-content .nav-tab li {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray);
+  letter-spacing: var(--letterSpaceLg);
+
+  padding: 6px 3px 6px 10px;
+  line-height: 26px;
+  position: relative;
+}
+
+.experience-content .nav-tab li,
+.experience-content .nav-tab li.active {
+  transition: var(--transition);
+  border-radius: 0;
+}
+
+.experience-content .nav-tab li:hover,
+.experience-content .nav-tab li.active {
+  background: var(--customBlueTab);
+  color: #fff;
+  font-weight: 600;
+}
+
+.experience-content .nav-tab li.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2.5px;
+  height: 100%;
+  width: 4px;
+  background: var(--customBlue);
+  border-radius: 2px;
+}
+
+.experience-content .nav-tab li:hover {
   cursor: pointer;
 }
 
-form #email:hover,
-form #email:focus {
-  outline: none;
-  box-shadow: 0.5rem 0.5rem 1.75rem rgba(0, 0, 0, 0.15);
+.experience-content .nav-tab li.active {
+  cursor: default;
 }
-
-form #email:valid {
-  border: 1px solid var(--customBlue);
-} */
 
 @media screen and (max-width: 1025px) {
   .about-content {
@@ -148,6 +218,23 @@ form #email:valid {
   .about-image::before,
   .about-image::after {
     height: 240px;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  #experience {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  #experience .experience-content {
+    padding: 70px 35px;
+  }
+}
+
+@media only screen and (width: 768px) {
+  .work-places {
+    border-left: 2px solid var(--lighterGray);
   }
 }
 
@@ -170,6 +257,20 @@ form #email:valid {
   .about-image::after {
     height: 100%;
   }
+
+  #experience .experience-content {
+    background: none;
+    border-radius: 0;
+    padding: 60px 0px 0;
+  }
+
+  #experience .experience-content .title {
+    color: var(--title);
+  }
+
+  .work-place-item {
+    color: var(--textColor);
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -177,38 +278,50 @@ form #email:valid {
     display: none;
   }
 
-  /* .about-image::before {
-    height: 220px;
-    width: 380px;
-  } */
-
   .technologies li {
     letter-spacing: var(--letterSpaceMd);
   }
 
-  /* form {
-    flex-direction: column;
+  #experience {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  form #submit {
-    margin: 10px;
-    min-width: 250px;
-  } */
+  .experience-content .nav-tab {
+    width: 385px;
+  }
+
+  .work-place-item {
+    max-width: 390px;
+    margin-left: 0px;
+  }
 }
 
-/* @media screen and (max-width: 376px) {
-  .about-image::before {
-    height: 200px;
-    width: 280px;
-  }
-} */
-
-@media screen and (max-width: 375px) {
-  /* .about-image::before {
-    height: 160px;
-  } */
-
+@media screen and (max-width: 376px) {
   .technologies {
     grid-template-columns: 1fr 100px;
+  }
+
+  .experience-content .nav-tab {
+    width: 335px;
+  }
+
+  .work-place-item {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #experience {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .experience-content .nav-tab {
+    width: 290px;
+  }
+
+  .work-place-item {
+    max-width: 300px;
   }
 }
