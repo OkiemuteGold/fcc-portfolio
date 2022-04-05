@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 /* Track */
@@ -50,7 +50,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-track:hover {
-  box-shadow: inset 0 1px 8px var(--gray);
+  box-shadow: inset 0 1px 6px var(--gray);
 }
 
 /* Handle */
@@ -258,7 +258,7 @@ li {
 
 ul.list li {
   position: relative;
-  padding-left: 30px;
+  padding-left: 28px;
 }
 
 ul.list li:before {
@@ -281,11 +281,11 @@ main section {
 
 .title {
   font-size: var(--fontHead);
-  font-weight: 400;
+  font-weight: 500;
   font-family: var(--fontUbuntu);
   margin-bottom: 40px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  letter-spacing: var(--letterSpaceXl);
+  letter-spacing: var(--letterSpaceLg);
   text-transform: capitalize;
   display: flex;
   align-items: center;

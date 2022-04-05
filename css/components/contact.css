@@ -5,13 +5,14 @@
 }
 
 .contact-content h2 {
-  font-size: var(--fontLg);
   font-family: var(--fontUbuntu);
+  font-size: var(--fontLg);
+  font-weight: 500;
   margin-top: 20px;
   margin-bottom: 30px;
   color: var(--title);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  letter-spacing: var(--letterSpaceXl);
+  letter-spacing: var(--letterSpaceLg);
   text-transform: capitalize;
 }
 

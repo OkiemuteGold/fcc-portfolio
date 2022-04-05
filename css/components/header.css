@@ -271,7 +271,7 @@ footer p a:hover {
     right: -100px;
     padding: 0;
     background: var(--shadowColor2);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     box-shadow: -10px 0px 30px -15px var(--gray);
     transform: translateX(0vw);
 
@@ -289,6 +289,7 @@ footer p a:hover {
     right: 55.5vw !important;
     transform: translateX(55.5vw) !important;
     box-shadow: none !important;
+    height: 100%;
   }
 
   .navbar li {

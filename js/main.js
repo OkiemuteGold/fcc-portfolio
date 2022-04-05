@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+$(document).ready(function () {
 
     /** header styled on scroll **/
     let prevScrollPosition = window.pageYOffset;
@@ -97,7 +97,8 @@ jQuery(document).ready(function ($) {
 
         window.onload = setDefault();
 
-        let currentTheme = JSON.parse(localStorage.getItem("theme")) ? JSON.parse(localStorage.getItem("theme")) : null;
+        let storedTheme = JSON.parse(localStorage.getItem("theme"));
+        let currentTheme = storedTheme ? storedTheme : null;
 
         const body = document.body;
         const modeIcon = document.querySelector(".mode-icon");
@@ -131,14 +132,14 @@ jQuery(document).ready(function ($) {
 
     /** nav-tab toggle **/
     // import { workPlaces } from "./work-places";
-    var id = '1';
+    let id = '1';
 
-    var workPlaces = [
+    let workPlaces = [
         {
             id: "1",
             role: "Software Developer",
             place: "@ Oxford Octopus",
-            date: "February 2021 - Present",
+            date: "February, 2021 - January, 2022",
             works: [
                 {
                     name: "Oxfordvest,",
@@ -158,30 +159,29 @@ jQuery(document).ready(function ($) {
                     // link: "https://https://foxpay.ng/"
                     link: "https://foxpaylanding.netlify.app/"
                 },
-                {
-                    name: "Oxford Octopus,",
-                    // link: "https://oxfordoctopus.com/"
-                    link: "https://oxfordoctopus.netlify.app/"
-                },
-                {
-                    name: "Oxford Craighton Schools",
-                    link: "https://oxfordcraightonschools.com/"
-                }
+
+                // {
+                //     name: "Oxford Octopus,",
+                //     // link: "https://oxfordoctopus.com/"
+                //     link: "https://oxfordoctopus.netlify.app/"
+                // },
+                // {
+                //     name: "Oxford Craighton Schools",
+                //     link: "https://oxfordcraightonschools.com/"
+                // }
             ],
             workDescription: [
-                "Developed websites, web apps and progressive web apps with HTML5, CSS3, Bootstrap, SCSS, JavaScript, jQuery, and Vue.js.",
-                "Collaborated with the team to support projects during all phases of delivery.",
-                "Ensured website/app performance is optimized and rectified front-end-related issues.",
-                "Identified innovative ideas and proof of concepts according to project requirements.",
-                "Maintained an organized workflow using project management tool (e.g. GitHub).",
-                "Provided Product Support Services to clients/users, alongside other team members."
+                "Developed web apps, progressive web apps and websites",
+                "Collaborated with the team during product ideation, development and delivery.",
+                "Optimized performance of websites/applications to above 85% and rectified other front-end-related issues.",
+                "Provided Product Support Services to clients, users, and other team members."
             ]
         },
         {
             id: "2",
             role: "Frontend Developer",
             place: "@ Freelance",
-            date: "August 2021 - Present",
+            date: "August, 2021 - Present",
             works: [
                 {
                     name: "Tosdis,",
@@ -205,19 +205,18 @@ jQuery(document).ready(function ($) {
                 },
             ],
             workDescription: [
-                "Built web pages from UI design mockups using technologies such as HTML5, CSS3, Bootstrap, JavaScript, jQuery.",
-                "Collaborated closely with clients during all phases of delivery, communicating and making necessary improvements to clients' initial product ideas.",
-                "Identified innovative ideas and proof of concepts according to project requirements."
+                "Transformed UI design/mockups to responsive web pages using technologies such as HTML5, CSS3, JavaScript, jQuery.",
+                "Collaborated with clients during all phases of delivery, communicating and making necessary improvement to products.",
             ]
         },
         {
             id: "3",
             role: "Frontend Developer",
             place: "Mentor",
-            date: "June 2021 - Present",
+            date: "June, 2021 - August, 2021",
             workDescription: [
-                "Helped to mentor two interns on HTML5, CSS3, Bootstrap, and JavaScript.",
-                "Worked with them to build some web templates that improved their coding skills.",
+                "Mentored interns on HTML5, CSS3, Bootstrap, and JavaScript.",
+                "Guided them to build some web pages that improved their coding skills.",
             ]
         }
     ];
@@ -253,7 +252,7 @@ jQuery(document).ready(function ($) {
 
                     (workPlace.works).forEach((work) => {
                         workPlaceOutput += `
-                            <a href="${work.link}" target="_blank" rel="noopener">${work.name}</a>
+                            <a href="${work.link}" target="_blank" rel="noopener noreferrer">${work.name}</a>
                         `;
                     });
 
@@ -288,21 +287,4 @@ jQuery(document).ready(function ($) {
 
     toggleWorkPlace(id);
 
-    /*---- Load More Items -----*/
-    function viewMore(viewMoreBtn, loadedItem) {
-        $(viewMoreBtn).on('click', function (e) {
-            e.preventDefault();
-
-            $(".spinner").css("display", "inline-block");
-
-            setTimeout(() => {
-                $(".spinner").css("display", "none");
-
-                $(this).fadeOut("slow");
-                $(loadedItem).fadeIn("slow");
-            }, 1300);
-        })
-    }
-
-    viewMore('.viewMoreProjects', '.project-item.hidden');
 });

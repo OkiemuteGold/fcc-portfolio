@@ -112,13 +112,18 @@
 }
 
 .work-place-item h3 {
-  font-size: 20px;
   font-family: var(--fontUbuntu);
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
 .work-place-item h3 span {
   color: var(--customGreen);
+}
+
+.work-place-item h4 {
+  font-weight: 600;
 }
 
 .work-place-item .date {
@@ -301,7 +306,7 @@
 
 @media screen and (max-width: 376px) {
   .technologies {
-    grid-template-columns: 1fr 100px;
+    grid-template-columns: 1fr 105px;
   }
 
   .experience-content .nav-tab {

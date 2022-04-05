@@ -1,3 +1,36 @@
+.project-category-tab {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -moz-column-gap: 10px;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 50px;
+}
+
+.project-category-tab .categories {
+  font-family: var(--fontLato);
+  font-size: var(--fontSmall);
+  color: var(--title);
+  padding: 0.7rem 1rem;
+  outline: none;
+  border: 1px solid var(--customGreen);
+  border-radius: 5px;
+  box-shadow: 0.5rem 0.5rem 1.75rem rgb(0 0 0 / 15%);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpaceSm);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.project-category-tab .categories.active {
+  font-weight: 600;
+  background: var(--customGreen);
+  color: var(--black);
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -36,83 +69,116 @@
   background-size: contain;
 } */
 
-.project-personal-portfolio {
+.defaultBg {
+  background-color: var(--footerColor);
+  color: var(--bodyBg);
+}
+
+.defaultBg::before {
+  content: "Default Background";
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+/* company */
+.oigng {
+  background-image: url("/image/projects/oigng-home.png");
+}
+.oxfordvest {
+  background-image: url("/image/projects/oxfordvest-product.png");
+}
+.oxfordholdings {
+  background-image: url("/image/projects/holdings.png");
+}
+
+.personal-portfolio {
   background-image: url("/image/projects/portfolio.png");
 }
-.project-stock-crypt {
+.stock-crypt {
   /* background-color: #ccc; */
   background-image: url("/image/projects/stock-crypt1.png");
 }
-.project-weather-js {
+.weather-js {
   background-image: url("/image/projects/weather-app-js.png");
 }
 
-.project-unsplash-clone {
+.unsplash-clone {
   background-image: url("/image/projects/unsplash-clone1.png");
 }
-.project-music-player-vue {
+.music-player-vue {
   background-image: url("/image/projects/music-player-vue1.png");
 }
-.project-shopify-int-challenge {
+.shopify-internship {
   background-image: url("/image/projects/shopify-int-challenge.png");
 }
 
-.project-tech-doc {
+.tech-doc {
   background-image: url("/image/projects/tech-doc.png");
 }
-.project-weather-vue {
+.weather-vue {
   background-image: url("/image/projects/weather-app-vue.png");
 }
-.project-quiz-vue {
+.quiz-vue {
   background-image: url("/image/projects/quiz.png");
 }
 
-.project-tosdis-temp {
+.tosdis {
   background-image: url("/image/projects/tosdis.png");
 }
-.project-solrazr {
+.solrazr {
   background-image: url("/image/projects/solrazr.png");
 }
-.project-product-landing {
+.product-landing {
   background-image: url("/image/projects/product-landing.png");
 }
 
-.project-survey-form {
+.survey-form {
   background-image: url("/image/projects/survey-form.png");
 }
-.project-tribute {
+.tribute {
   background-image: url("/image/projects/tribute.png");
 }
-.project-weight-conv {
+.weight-conv {
   background-image: url("/image/projects/weight-conv-js.png");
 }
 
 /* bg hover ----- */
-.project-item:hover .project-personal-portfolio {
+.project-item:hover .oigng {
+  background-image: url("/image/projects/sub-proj/oigng-port-hover.png");
+}
+/* .project-item:hover .oxfordvest {
+  background-image: url("/image/projects/sub-proj/");
+} */
+/* .project-item:hover .oxfordholdings {
+  background-image: url("/image/projects/sub-proj/");
+} */
+
+.project-item:hover .personal-portfolio {
   background-image: url("/image/projects/sub-proj/portfolio_day.png");
 }
-.project-item:hover .project-stock-crypt {
+.project-item:hover .stock-crypt {
   background-image: url("/image/projects/sub-proj/stock-crypt2.png");
 }
 
-.project-item:hover .project-unsplash-clone {
+.project-item:hover .unsplash-clone {
   background-image: url("/image/projects/sub-proj/unsplash-clone2.png");
 }
-.project-item:hover .project-music-player-vue {
+.project-item:hover .music-player-vue {
   background-image: url("/image/projects/sub-proj/music-player-vue2.png");
 }
 
-.project-item:hover .project-tech-doc {
+.project-item:hover .tech-doc {
   background-image: url("/image/projects/sub-proj/tech-doc_2.png");
 }
 
-.project-item:hover .project-tosdis-temp {
+.project-item:hover .tosdis {
   background-image: url("/image/projects/sub-proj/tosdis_2.png");
 }
-.project-item:hover .project-solrazr {
+.project-item:hover .solrazr {
   background-image: url("/image/projects/sub-proj/solrazr_2.png");
 }
-.project-item:hover .project-product-landing {
+.project-item:hover .product-landing {
   background-image: url("/image/projects/sub-proj/product-landing_2.png");
 }
 
@@ -155,7 +221,9 @@
 }
 
 .project-description .view-project-button {
+  display: inline-block;
   padding: 7px 15px;
+  margin-top: 8px;
   background: var(--button2);
   color: var(--title);
   border: 1px solid var(--customGreen);
@@ -171,8 +239,9 @@
 }
 
 .view-more-projects {
-  margin-top: 80px;
+  margin-top: 70px;
   text-align: center;
+  display: block !important;
 }
 
 .view-more-projects .btn {
@@ -218,6 +287,11 @@
   #projects {
     padding-left: 70px;
     padding-right: 70px;
+  }
+
+  .project-category-tab {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
   }
 
   .projects {
