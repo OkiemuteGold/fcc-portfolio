@@ -3,9 +3,19 @@ $(document).ready(function () {
     let projects = [
         {
             id: "company",
+            backgroundClass: "feedback-app",
+            title: "SoulComms Feedback App",
+            language: "Vuejs, Firebase",
+            description: "For submitting consumers feedbacks through form, input upload, drag & drop upload, and live recording. Only admins can view feedbacks.",
+            note: "",
+            url: "https://feedbackvue.netlify.app/",
+            hiddenClass: ""
+        },
+        {
+            id: "company",
             backgroundClass: "oxfordvest",
             title: "Oxfordvest",
-            language: "Vuejs",
+            language: "Vuejs, Azure, Axios",
             description: "Multi-partnership investment company making investment in Agriculture easy.",
             note: "",
             url: "https://oxfordvest.com/",
@@ -15,7 +25,7 @@ $(document).ready(function () {
             id: "company",
             backgroundClass: "oigng",
             title: "OIGNG",
-            language: "Vuejs",
+            language: "Vuejs, Vuex",
             description: "Business development company that builds businesses across different sectors in Nigeria.",
             note: "",
             url: "https://oigng.netlify.app/",
@@ -26,17 +36,17 @@ $(document).ready(function () {
             backgroundClass: "oxfordholdings",
             title: "Oxford Holdings",
             language: "JavaScript",
-            description: "A leading multi-sectoral organization with diversified investments spanning across key business sectors.",
+            description: "Leading multi-sectoral organization with diversified investments spanning across key business sectors.",
             note: "",
             url: "http://oxfordholdingsng.com/",
-            hiddenClass: ""
+            hiddenClass: "hidden"
         },
         {
             id: "personal",
             backgroundClass: "stock-crypt",
             title: "Stock-Crypt",
-            language: "Vuejs",
-            description: "Made to aid investment in US Stocks, and Crypto-currencies. App allows you choose platform of interest.",
+            language: "Vuejs, Vuex, Axios",
+            description: "Aids investment in US Stocks, and Crypto-currencies. App allows you choose platform of interest, sort data, and recommendations.",
             note: "This project is currently being modified.",
             url: "https://stock-crypt.netlify.app/",
             hiddenClass: ""
@@ -45,8 +55,8 @@ $(document).ready(function () {
             id: "personal",
             backgroundClass: "weather-js",
             title: "Weather App",
-            language: "JavaScript",
-            description: "Find out the weather details of any city in the world through a voice or direct text input. And have the result <strong>read out to you</strong>.",
+            language: "JavaScript, TTS",
+            description: "Get weather details of any city in the world through a voice or direct text input. And have the result <strong>read out to you</strong>.",
             note: "",
             url: "https://weather-man-app.netlify.app/",
             hiddenClass: ""
@@ -55,7 +65,7 @@ $(document).ready(function () {
             id: "personal",
             backgroundClass: "music-player-vue",
             title: "Music Player",
-            language: "Vuejs",
+            language: "Vuejs, Vuex",
             description: "Music Player to unwind. Has play, pause, add to favorite, search, sort, shuffle, repeat, and many more features. Has a dedicated now playing view.",
             note: "",
             url: "https://musicplayer-vue.netlify.app/",
@@ -65,7 +75,7 @@ $(document).ready(function () {
             id: "test",
             backgroundClass: "unsplash-clone",
             title: "Unsplash Clone",
-            language: "Vuejs",
+            language: "Vuejs, Axios",
             description: "Search, view, expand, and download your favorite photo from Unsplash directly from this app.",
             note: "",
             url: "https://unsplash-clone-vue.netlify.app/",
@@ -75,7 +85,7 @@ $(document).ready(function () {
             id: "test",
             backgroundClass: "shopify-internship",
             title: "Shopify Internship",
-            language: "Vuejs",
+            language: "Vuejs, Axios",
             description: "Shopify Internship Challenge to build an application with React js, that fetches data from the NASA free API. User should be able to like images.",
             note: "",
             url: "https://shopify-intern.netlify.app/",
@@ -95,8 +105,8 @@ $(document).ready(function () {
             id: "test",
             backgroundClass: "product-landing",
             title: "Product landing",
-            language: "JavaScript",
-            description: "A simple product landing page made with HTML, CSS, and JavaScript. It is part of Freecodecamp's Responsive Web Design Project.",
+            language: "CSS, JavaScript",
+            description: "Product landing page. Based on Freecodecamp's Responsive Web Design Project.",
             note: "",
             url: "https://fcc-p-landing.netlify.app/",
             hiddenClass: "hidden"
@@ -105,8 +115,8 @@ $(document).ready(function () {
             id: "test",
             backgroundClass: "survey-form",
             title: "Survey Form",
-            language: "JavaScript",
-            description: "Survey form, made with HTML, and CSS. It is part of Freecodecamp's Responsive Web Design Project.",
+            language: "HTML, CSS",
+            description: "Single page survey form. Based on Freecodecamp's Responsive Web Design Project.",
             note: "",
             url: "https://fcc-survey-form1.netlify.app/",
             hiddenClass: "hidden"
@@ -115,8 +125,8 @@ $(document).ready(function () {
             id: "test",
             backgroundClass: "tribute",
             title: "Tribute to Mary Slessor",
-            language: "JavaScript",
-            description: "Tribute page of Mary Slessor (late), made with HTML, and CSS. It is part of Freecodecamp's Responsive Web Design Project.",
+            language: "CSS, JavaScript",
+            description: "Tribute page of Mary Slessor (late). Based on Freecodecamp's Responsive Web Design Project.",
             note: "",
             url: "https://fcc-tribute-page-mary.netlify.app/",
             hiddenClass: "hidden"
@@ -126,7 +136,7 @@ $(document).ready(function () {
             backgroundClass: "tosdis",
             title: "Tosdis Web",
             language: "JavaScript",
-            description: "A fully responsiveness Crypto currency website made for a client",
+            description: "Crypto currency project for staking, earning new tokens as rewards.",
             note: "",
             url: "https://tosdis.netlify.app/",
             hiddenClass: ""
@@ -136,17 +146,47 @@ $(document).ready(function () {
             backgroundClass: "solrazr",
             title: "Solrazr Web",
             language: "JavaScript",
-            description: "A fully responsiveness single page website made for a client",
+            description: "Solrazr is the first decentralized developer ecosystem for Solana.",
             note: "",
             url: "https://solrazr1.netlify.app/",
             hiddenClass: ""
+        },
+        {
+            id: "freelance",
+            backgroundClass: "multichain",
+            title: "Multichain Web",
+            language: "JavaScript",
+            description: "Crypto currency project that helps user connect multiple wallets.",
+            note: "",
+            url: "",
+            hiddenClass: ""
+        },
+        {
+            id: "freelance",
+            backgroundClass: "pocket-arena",
+            title: "Pocket Arena Web",
+            language: "CSS, JavaScript",
+            description: "Play-To-Earn based NFT DApp games portal platform.",
+            note: "",
+            url: "https://pocket-arena.netlify.app/",
+            hiddenClass: "hidden"
+        },
+        {
+            id: "freelance",
+            backgroundClass: "walletconnect",
+            title: "WalletConnect Web",
+            language: "CSS, JavaScript",
+            description: "Crypto currency project that helps user connect multiple wallets.",
+            note: "",
+            url: "https://walletconnect1.netlify.app/",
+            hiddenClass: "hidden"
         },
         {
             id: "challenge",
             backgroundClass: "weather-vue",
             title: "Weather App",
             language: "Vuejs",
-            description: "A weather application made with Vue js. My first Vue Progressive Web Application (PWA).",
+            description: "Weather application made with Vue js. My first Vue Progressive Web Application (PWA).",
             note: "",
             url: "https://weather-check-vue.netlify.app/",
             hiddenClass: ""
@@ -156,7 +196,7 @@ $(document).ready(function () {
             backgroundClass: "quiz-vue",
             title: "Quiz App",
             language: "Vuejs",
-            description: "A quiz progressive web application (PWA) to improve my Vuejs coding skills",
+            description: "Quiz progressive web application (PWA) to improve my Vuejs coding skills",
             note: "",
             url: "https://weather-check-vue.netlify.app/",
             hiddenClass: ""
@@ -166,14 +206,14 @@ $(document).ready(function () {
             backgroundClass: "weight-conv",
             title: "Weight Converter",
             language: "JavaScript",
-            description: "An application made with HTML, CSS and JavaScript, which allows user input a metric value and receive the result in grams, kilograms and ounce.",
+            description: "Metrics conversion application which accepts user's metric value input and returns the result in grams, kilograms and ounce.",
             note: "",
             url: "https://weight-conv.netlify.app/",
             hiddenClass: ""
         },
     ]
 
-    let id = "personal";
+    let id = "company";
 
     // console.log(projects);
 

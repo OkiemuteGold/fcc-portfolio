@@ -306,7 +306,7 @@
 
 @media screen and (max-width: 376px) {
   .technologies {
-    grid-template-columns: 1fr 105px;
+    grid-template-columns: 1fr;
   }
 
   .experience-content .nav-tab {

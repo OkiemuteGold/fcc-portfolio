@@ -82,6 +82,9 @@
 }
 
 /* company */
+.feedback-app {
+  background-image: url("/image/projects/feedback__vue-record.png");
+}
 .oigng {
   background-image: url("/image/projects/oigng-home.png");
 }
@@ -129,6 +132,17 @@
 .solrazr {
   background-image: url("/image/projects/solrazr.png");
 }
+.multichain {
+  background-image: url("/image/projects/multichain-full.png");
+}
+
+.pocket-arena {
+  background-image: url("/image/projects/pocket-arena.png");
+  background-position: top !important;
+}
+.walletconnect {
+  background-image: url("/image/projects/walletconnect-1.png");
+}
 .product-landing {
   background-image: url("/image/projects/product-landing.png");
 }
@@ -144,6 +158,10 @@
 }
 
 /* bg hover ----- */
+.project-item:hover .feedback-app {
+  /* background-image: url("/image/projects/sub-proj/feedback-app-video.mp4"); */
+  background-image: url("/image/projects/sub-proj/feedback__vue-uploadedFeedback.png");
+}
 .project-item:hover .oigng {
   background-image: url("/image/projects/sub-proj/oigng-port-hover.png");
 }
@@ -177,6 +195,17 @@
 }
 .project-item:hover .solrazr {
   background-image: url("/image/projects/sub-proj/solrazr_2.png");
+}
+.project-item:hover .multichain {
+  background-image: url("/image/projects/sub-proj/multichain-1.png");
+}
+
+.project-item:hover .pocket-arena {
+  background-image: url("/image/projects/sub-proj/pocket-arena-mobile.png");
+  background-position: center !important;
+}
+.project-item:hover .walletconnect {
+  background-image: url("/image/projects/sub-proj/walletconnect-2.png");
 }
 .project-item:hover .product-landing {
   background-image: url("/image/projects/sub-proj/product-landing_2.png");

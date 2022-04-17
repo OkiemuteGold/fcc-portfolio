@@ -138,7 +138,30 @@ $(document).ready(function () {
         {
             id: "1",
             role: "Software Developer",
-            place: "@ Oxford Octopus",
+            place: "@Genesis Digital Solutions",
+            date: "February, 2022",
+            works: [
+                {
+                    name: "SoulComms Feedback App,",
+                    link: "https://feedbackvue.netlify.app/"
+                },
+                {
+                    name: "LandFlipi Webapp (in development).",
+                    link: ""
+                },
+            ],
+            workDescription: [
+                "Developing applications using JavaScript, jQuery, SCSS, CSS, Vuejs, Angular, Firebase.",
+
+                "Collaborating with the team during product ideation, development and delivery.",
+
+                "Providing product management and design support to clients, users, and team members."
+            ]
+        },
+        {
+            id: "2",
+            role: "Software Developer",
+            place: "@Oxford Octopus",
             date: "February, 2021 - January, 2022",
             works: [
                 {
@@ -155,7 +178,7 @@ $(document).ready(function () {
                     link: "https://oigng.netlify.app/"
                 },
                 {
-                    name: "Foxpay,",
+                    name: "Foxpay.",
                     // link: "https://https://foxpay.ng/"
                     link: "https://foxpaylanding.netlify.app/"
                 },
@@ -171,16 +194,23 @@ $(document).ready(function () {
                 // }
             ],
             workDescription: [
-                "Developed web apps, progressive web apps and websites",
-                "Collaborated with the team during product ideation, development and delivery.",
-                "Optimized performance of websites/applications to above 85% and rectified other front-end-related issues.",
-                "Provided Product Support Services to clients, users, and other team members."
+                "Followed design prototypes, project descriptions, and design requirements to build high-performance, semantic, accessible, and responsive UIs for web apps, progressive web apps and websites.",
+
+                // "Applied UI/UX design practices while building the OXFORDVEST platform, implemented functionalities - To calculate the ROI for all products, search and filter functionality for FAQ, etc",
+
+                "Optimized projects(websites, applications) for performance, speed, and search engines, to above 85% and rectified other front-end-related issues.",
+
+                "Validated all HTML, and CSS codes using W3C Validation Service and Carried out usability, mobile-friendly, and responsive design testing using Google’s Mobile-Friendly Test",
+
+                "Collaborated with the team, and supported projects through ideation, development, and delivery.",
+
+                "Provided technical product support services to clients, users, and other team members."
             ]
         },
         {
-            id: "2",
+            id: "3",
             role: "Frontend Developer",
-            place: "@ Freelance",
+            place: "@Freelance",
             date: "August, 2021 - Present",
             works: [
                 {
@@ -192,31 +222,54 @@ $(document).ready(function () {
                     link: "https://solrazr1.netlify.app/"
                 },
                 {
-                    name: "Pocket Arena,",
-                    link: "https://pocket-arena.netlify.app/"
+                    name: "Multichain,",
+                    link: ""
                 },
                 {
-                    name: "BIP Mnemonic,",
-                    link: "https://bip-mnemonic.netlify.app/"
+                    name: "Pocket Arena,",
+                    link: "https://pocket-arena.netlify.app/"
                 },
                 {
                     name: "Wallet Connect",
                     link: "https://walletconnect1.netlify.app/"
                 },
+                {
+                    name: "BIP Mnemonic.",
+                    link: "https://bip-mnemonic.netlify.app/"
+                },
+                // {
+                //     name: "Metamask,",
+                //     link: "https://metamask.netlify.app/"
+                // },
             ],
             workDescription: [
-                "Transformed UI design/mockups to responsive web pages using technologies such as HTML5, CSS3, JavaScript, jQuery.",
-                "Collaborated with clients during all phases of delivery, communicating and making necessary improvement to products.",
+                "Design UIs for web applications, progressive web applications, and websites.",
+
+                "Follow design prototypes, project descriptions, and design requirements to build high-performance, semantic, accessible, and responsive UIs.",
+
+                "Collaborate with clients during all phases of delivery, communicating and making necessary improvement to products."
             ]
         },
         {
-            id: "3",
-            role: "Frontend Developer",
-            place: "Mentor",
+            id: "4",
+            role: "Peer Mentor",
+            place: "@Oxford Octopus",
             date: "June, 2021 - August, 2021",
             workDescription: [
-                "Mentored interns on HTML5, CSS3, Bootstrap, and JavaScript.",
-                "Guided them to build some web pages that improved their coding skills.",
+                "Provided mentorship support for intern Front-end developers.",
+
+                "Guided interns and peers in building small projects that improved their coding skills in HTML5, CSS3, JavaScript, Vuejs."
+            ]
+        },
+        {
+            id: "5",
+            role: "Volunteer",
+            place: "@Oxford Octopus",
+            date: "October, 2020 - December, 2020",
+            workDescription: [
+                "Volunteered for 3 months to improve coding skills, while solving technical problems for the firm.",
+
+                "Built mobile-responsive websites using HTML, CSS, JavaScript, and jQuery, and maintained an organized workflow using Github."
             ]
         }
     ];
