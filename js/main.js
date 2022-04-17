@@ -264,7 +264,7 @@ $(document).ready(function () {
         {
             id: "5",
             role: "Volunteer",
-            place: "@Oxford Octopus",
+            place: "@<abbr title='Oxford Integrated Web solutions'>OIWS</abbr>",
             date: "October, 2020 - December, 2020",
             workDescription: [
                 "Volunteered for 3 months to improve coding skills, while solving technical problems for the firm.",
