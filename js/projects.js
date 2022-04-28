@@ -8,7 +8,7 @@ $(document).ready(function () {
             language: "Vuejs, Firebase",
             description: "For submitting consumers feedbacks through form, input upload, drag & drop upload, and live recording. Only admins can view feedbacks.",
             note: "",
-            url: "https://feedbackvue.netlify.app/",
+            url: "https://feedbackvuetest.netlify.app/",
             hiddenClass: ""
         },
         {

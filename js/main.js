@@ -143,7 +143,7 @@ $(document).ready(function () {
             works: [
                 {
                     name: "SoulComms Feedback App,",
-                    link: "https://feedbackvue.netlify.app/"
+                    link: "https://feedbackvuetest.netlify.app/"
                 },
                 {
                     name: "LandFlipi Webapp (in development).",
