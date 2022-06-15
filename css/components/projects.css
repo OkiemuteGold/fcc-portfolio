@@ -82,14 +82,20 @@
 }
 
 /* company */
+.agrolyfe {
+  background-image: url("/image/projects/agrolyfe-1.png");
+}
 .feedback-app {
   background-image: url("/image/projects/feedback__vue-record.png");
 }
-.oigng {
-  background-image: url("/image/projects/oigng-home.png");
-}
 .oxfordvest {
   background-image: url("/image/projects/oxfordvest-product.png");
+}
+.landflip {
+  background-image: url("/image/projects/landflip-1.jpg");
+}
+.oigng {
+  background-image: url("/image/projects/oigng-home.png");
 }
 .oxfordholdings {
   background-image: url("/image/projects/holdings.png");
@@ -97,6 +103,9 @@
 
 .personal-portfolio {
   background-image: url("/image/projects/portfolio.png");
+}
+.amazoncars-landing {
+  background-image: url("/image/projects/amazoncars-landing.png");
 }
 .stock-crypt {
   /* background-color: #ccc; */
@@ -158,9 +167,15 @@
 }
 
 /* bg hover ----- */
+.project-item:hover .agrolyfe {
+  background-image: url("/image/projects/sub-proj/agrolyfe-2.png");
+}
 .project-item:hover .feedback-app {
   /* background-image: url("/image/projects/sub-proj/feedback-app-video.mp4"); */
   background-image: url("/image/projects/sub-proj/feedback__vue-uploadedFeedback.png");
+}
+.project-item:hover .landflip {
+  background-image: url("/image/projects/sub-proj/landflip-2.jpg");
 }
 .project-item:hover .oigng {
   background-image: url("/image/projects/sub-proj/oigng-port-hover.png");
@@ -174,6 +189,9 @@
 
 .project-item:hover .personal-portfolio {
   background-image: url("/image/projects/sub-proj/portfolio_day.png");
+}
+.project-item:hover .amazoncars-landing {
+  background-image: url("/image/projects/sub-proj/amazoncars-landing-products.png");
 }
 .project-item:hover .stock-crypt {
   background-image: url("/image/projects/sub-proj/stock-crypt2.png");

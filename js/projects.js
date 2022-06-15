@@ -3,6 +3,16 @@ $(document).ready(function () {
     let projects = [
         {
             id: "company",
+            backgroundClass: "agrolyfe",
+            title: "Agrolyfe",
+            language: "Vuejs, Azure",
+            description: "Agrolyfe is democratizing agro-partnership and giving growing farmers access to affordable and secure arable farmlands.",
+            note: "",
+            url: "https://agrolyfe.netlify.app/",
+            hiddenClass: ""
+        },
+        {
+            id: "company",
             backgroundClass: "feedback-app",
             title: "SoulComms Feedback App",
             language: "Vuejs, Firebase",
@@ -23,13 +33,23 @@ $(document).ready(function () {
         },
         {
             id: "company",
+            backgroundClass: "landflip",
+            title: "Landflip",
+            language: "JavaScript",
+            description: "Landflip.ng is making buying and selling lands in Nigeria easy, fast, and secure, with multiple funding options.",
+            note: "",
+            url: "https://landflip.ng/",
+            hiddenClass: "hidden"
+        },
+        {
+            id: "company",
             backgroundClass: "oigng",
             title: "OIGNG",
             language: "Vuejs, Vuex",
             description: "Business development company that builds businesses across different sectors in Nigeria.",
             note: "",
             url: "https://oigng.netlify.app/",
-            hiddenClass: ""
+            hiddenClass: "hidden"
         },
         {
             id: "company",
@@ -53,6 +73,16 @@ $(document).ready(function () {
         },
         {
             id: "personal",
+            backgroundClass: "amazoncars-landing",
+            title: "Amazon Cars",
+            language: "Angular, TypeScript",
+            description: "A hypothetical situation, to create an online car dealership application, in line with my EntryLevel Product Management certification course.",
+            note: "The project is still in development.",
+            url: "https://amazoncars.netlify.app/",
+            hiddenClass: ""
+        },
+        {
+            id: "personal",
             backgroundClass: "weather-js",
             title: "Weather App",
             language: "JavaScript, TTS",
@@ -69,7 +99,7 @@ $(document).ready(function () {
             description: "Music Player to unwind. Has play, pause, add to favorite, search, sort, shuffle, repeat, and many more features. Has a dedicated now playing view.",
             note: "",
             url: "https://musicplayer-vue.netlify.app/",
-            hiddenClass: ""
+            hiddenClass: "hidden"
         },
         {
             id: "test",
