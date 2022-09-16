@@ -157,7 +157,7 @@
   align-items: center;
 
   /* based on fcc requirement */
-  margin-top: -80px;
+  margin-top: -3.5%;
   height: 100vh;
   background: transparent;
   /* based on fcc requirement */
@@ -167,7 +167,7 @@
 
 #welcome-section .content {
   max-width: 800px;
-  padding: 50px 150px;
+  padding: 0px 150px;
 }
 
 #welcome-section .content > span {
@@ -236,7 +236,8 @@ footer p a:hover {
 @media screen and (max-width: 1025px) {
   #welcome-section {
     max-width: 1000px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #welcome-section .content h1 {
@@ -339,11 +340,12 @@ footer p a:hover {
 
   #welcome-section {
     justify-content: center;
+    margin-top: -5.5%;
   }
 
   #welcome-section .content {
     max-width: 100%;
-    padding: 0px 100px 30px;
+    padding: 0px 100px;
   }
 
   #welcome-section .content h1 {
@@ -352,11 +354,7 @@ footer p a:hover {
   }
 
   #welcome-section .content h1 span:last-child {
-    font-size: 2.85rem;
-  }
-
-  #welcome-section .content p {
-    max-width: 420px;
+    font-size: 2.65rem;
   }
 }
 
@@ -366,17 +364,16 @@ footer p a:hover {
   }
 
   #welcome-section .content {
-    padding: 0px 20px 30px;
+    padding: 0px 20px;
   }
 
   #welcome-section .content h1 {
-    font-size: 2.85rem;
+    font-size: 2.65rem;
     line-height: initial;
   }
 
   #welcome-section .content h1 span:last-child {
-    font-size: 2.5rem;
-    margin-top: 15px;
+    font-size: 1.725rem;
   }
 }
 
@@ -385,46 +382,13 @@ footer p a:hover {
     position: relative;
     margin-top: 35px;
   }
-
-  .social-icons {
-    display: block;
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: rotate(-90deg);
-    width: 40px;
-  }
-
-  .social-icons ul li a {
-    border-radius: 50%;
-    background: var(--lighterGray);
-  }
-
-  .social-icons svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .social-icons ul li:last-child {
-    margin-bottom: 0px;
-  }
-
-  .social-icons ul li a {
-    transform: rotate(90deg);
-  }
-
-  .social-icons::after {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 426px) {
-  #welcome-section {
+  /* #welcome-section {
     margin-top: 0px;
     height: 680px;
-  }
+  } */
 
   #welcome-section .content .btn {
     min-width: 95px;
@@ -434,17 +398,13 @@ footer p a:hover {
 }
 
 @media screen and (max-width: 321px) {
-  #welcome-section {
-    height: 693px;
-  }
-
   #welcome-section .content h1 {
     font-size: 2.3rem;
     letter-spacing: var(--letterSpaceSm);
   }
 
   #welcome-section .content h1 span:last-child {
-    font-size: 2rem;
+    font-size: 1.625rem;
   }
 
   footer {

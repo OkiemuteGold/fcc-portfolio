@@ -276,7 +276,7 @@ ul.list li:before {
 }
 
 main section {
-  padding: 100px 50px;
+  padding: 80px 50px;
 }
 
 .title {
@@ -363,7 +363,7 @@ img {
 
 @media screen and (max-width: 769px) {
   main section {
-    padding: 100px 20px;
+    padding: 50px 20px;
   }
 
   .title {
@@ -381,10 +381,6 @@ img {
 }
 
 @media screen and (max-width: 426px) {
-  main section {
-    padding: 100px 20px 50px;
-  }
-
   .title {
     font-size: 1.725rem;
     margin-bottom: 30px;
@@ -403,7 +399,7 @@ img {
 
 @media screen and (max-width: 321px) {
   main section {
-    padding: 100px 15px 50px;
+    padding: 50px 15px;
   }
 
   .title {
