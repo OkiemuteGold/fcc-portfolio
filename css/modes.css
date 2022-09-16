@@ -79,15 +79,21 @@
 }
 
 .mode {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
-  background: var(--lighterGray);
-  border-radius: 10%;
+  background: var(--bodyBg);
+  border-radius: 50%;
 }
 
 .mode-icon {
   font-size: var(--fontPara);
   transition: color var(--transition);
   text-transform: capitalize;
+  line-height: inherit;
 }
 
 .fa-moon,
