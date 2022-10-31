@@ -165,6 +165,11 @@ $(document).ready(function () {
             date: "February, 2021 - January, 2022",
             works: [
                 {
+                    name: "Foxpay.",
+                    // link: "https://https://foxpay.ng/"
+                    link: "https://foxpayng.netlify.app/"
+                },
+                {
                     name: "Oxfordvest,",
                     link: "https://oxfordvest.com/"
                 },
@@ -176,11 +181,6 @@ $(document).ready(function () {
                     name: "OIGNG,",
                     // link: "https://oig.ng/"
                     link: "https://oigng.netlify.app/"
-                },
-                {
-                    name: "Foxpay.",
-                    // link: "https://https://foxpay.ng/"
-                    link: "https://foxpayng.netlify.app/"
                 },
 
                 // {

@@ -43,6 +43,16 @@ $(document).ready(function () {
         },
         {
             id: "company",
+            backgroundClass: "foxpay",
+            title: "Foxpay Website",
+            language: "JavaScript",
+            description: "FoxPay offers a flexible, secure, and better way to save, earn high, and pay utility bills.",
+            note: "",
+            url: "https://foxpayng.netlify.app/",
+            hiddenClass: "hidden"
+        },
+        {
+            id: "company",
             backgroundClass: "oxfordvest",
             title: "Oxfordvest",
             language: "Vuejs, Azure, Axios",

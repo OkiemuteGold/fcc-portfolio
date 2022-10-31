@@ -94,6 +94,9 @@
 .zuckerli {
   background-image: url("/image/projects/zuckerli.png");
 }
+.foxpay {
+  background-image: url("/image/projects/foxpay1.png");
+}
 .oxfordvest {
   background-image: url("/image/projects/oxfordvest-product.png");
 }
@@ -185,6 +188,9 @@
 }
 .project-item:hover .dmed {
   background-image: url("/image/projects/sub-proj/dmed2.png");
+}
+.project-item:hover .foxpay {
+  background-image: url("/image/projects/sub-proj/foxpay2.png");
 }
 .project-item:hover .landflip {
   background-image: url("/image/projects/sub-proj/landflip-2.jpg");
