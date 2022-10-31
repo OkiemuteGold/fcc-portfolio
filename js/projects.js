@@ -6,9 +6,9 @@ $(document).ready(function () {
             backgroundClass: "agrolyfe",
             title: "Agrolyfe",
             language: "Vuejs, Azure",
-            description: "Agrolyfe is democratizing agro-partnership and giving growing farmers access to affordable and secure arable farmlands.",
+            description: "Laid out design and built the Agrolyfe website. Fetched and displayed data, performed functions and calculations with data",
             note: "",
-            url: "https://agrolyfe.netlify.app/",
+            url: "https://agrolyfe.farm/",
             hiddenClass: ""
         },
         {
@@ -16,10 +16,30 @@ $(document).ready(function () {
             backgroundClass: "feedback-app",
             title: "SoulComms Feedback App",
             language: "Vuejs, Firebase",
-            description: "For submitting consumers feedbacks through form, input upload, drag & drop upload, and live recording. Only admins can view feedbacks.",
+            description: "Makes submitting consumers feedbacks easy through form, input upload, drag & drop upload, and live recording. With feedbacks view.",
             note: "",
             url: "https://feedbackvuetest.netlify.app/",
             hiddenClass: ""
+        },
+        {
+            id: "company",
+            backgroundClass: "dmed",
+            title: "D.med Software Website",
+            language: "Wordpress, Elementor",
+            description: "D.med Software developes software systems for the medical industry. It's based in Spain.",
+            note: "",
+            url: "",
+            hiddenClass: ""
+        },
+        {
+            id: "company",
+            backgroundClass: "zuckerli",
+            title: "Zuckerli Website",
+            language: "HTML5, CSS3",
+            description: "Healthcare company based in Germany, specializing in diabetes products, consultancy, and others.",
+            note: "",
+            url: "https://zueckerli.de/",
+            hiddenClass: "hidden"
         },
         {
             id: "company",
@@ -29,12 +49,12 @@ $(document).ready(function () {
             description: "Multi-partnership investment company making investment in Agriculture easy.",
             note: "",
             url: "https://oxfordvest.com/",
-            hiddenClass: ""
+            hiddenClass: "hidden"
         },
         {
             id: "company",
             backgroundClass: "landflip",
-            title: "Landflip",
+            title: "Landflipi Website",
             language: "JavaScript",
             description: "Landflip.ng is making buying and selling lands in Nigeria easy, fast, and secure, with multiple funding options.",
             note: "",
@@ -76,9 +96,19 @@ $(document).ready(function () {
             backgroundClass: "amazoncars-landing",
             title: "Amazon Cars",
             language: "Angular, TypeScript",
-            description: "A hypothetical situation, to create an online car dealership application, in line with my EntryLevel Product Management certification course.",
+            description: "A hypothetical situation, to create an online car dealership application, in line with EntryLevel Product Management certification.",
             note: "The project is still in development.",
             url: "https://amazoncars.netlify.app/",
+            hiddenClass: ""
+        },
+        {
+            id: "personal",
+            backgroundClass: "invoice",
+            title: "Invoice App",
+            language: "Vue3, Sass, Firebase",
+            description: "Application to create invoice, download (jsPDF plugin) and bill to client.",
+            note: "<strong>Multi-language support</strong> and others coming soon",
+            url: "https://invoice-app-vue3.netlify.app/",
             hiddenClass: ""
         },
         {
@@ -89,7 +119,7 @@ $(document).ready(function () {
             description: "Get weather details of any city in the world through a voice or direct text input. And have the result <strong>read out to you</strong>.",
             note: "",
             url: "https://weather-man-app.netlify.app/",
-            hiddenClass: ""
+            hiddenClass: "hidden"
         },
         {
             id: "personal",

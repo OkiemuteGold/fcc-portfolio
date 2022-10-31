@@ -88,6 +88,12 @@
 .feedback-app {
   background-image: url("/image/projects/feedback__vue-record.png");
 }
+.dmed {
+  background-image: url("/image/projects/dmed1.png");
+}
+.zuckerli {
+  background-image: url("/image/projects/zuckerli.png");
+}
 .oxfordvest {
   background-image: url("/image/projects/oxfordvest-product.png");
 }
@@ -165,6 +171,9 @@
 .weight-conv {
   background-image: url("/image/projects/weight-conv-js.png");
 }
+.invoice {
+  background-image: url("/image/projects/invoice1.png");
+}
 
 /* bg hover ----- */
 .project-item:hover .agrolyfe {
@@ -173,6 +182,9 @@
 .project-item:hover .feedback-app {
   /* background-image: url("/image/projects/sub-proj/feedback-app-video.mp4"); */
   background-image: url("/image/projects/sub-proj/feedback__vue-uploadedFeedback.png");
+}
+.project-item:hover .dmed {
+  background-image: url("/image/projects/sub-proj/dmed2.png");
 }
 .project-item:hover .landflip {
   background-image: url("/image/projects/sub-proj/landflip-2.jpg");
@@ -227,6 +239,9 @@
 }
 .project-item:hover .product-landing {
   background-image: url("/image/projects/sub-proj/product-landing_2.png");
+}
+.project-item:hover .invoice {
+  background-image: url("/image/projects/sub-proj/invoice2.png");
 }
 
 .project-description {

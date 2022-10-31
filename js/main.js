@@ -180,7 +180,7 @@ $(document).ready(function () {
                 {
                     name: "Foxpay.",
                     // link: "https://https://foxpay.ng/"
-                    link: "https://foxpaylanding.netlify.app/"
+                    link: "https://foxpayng.netlify.app/"
                 },
 
                 // {
@@ -210,9 +210,34 @@ $(document).ready(function () {
         {
             id: "3",
             role: "Frontend Developer",
+            place: "@Contract",
+            date: "June - October, 2022",
+            works: [
+                {
+                    name: "Zuckerli update (Registration, order to checkout),",
+                    link: "https://rezeptportal-zueckerli.de/"
+                },
+                {
+                    name: "D.med Softwares website (Elementor)",
+                    link: "https://dmed-software.com/"
+                },
+            ],
+            workDescription: [
+                "Zuckerli website update was for user registration, login, products, orders, checkout page, etc.",
+
+                "D.med Softwares website was built using Wordpress Elementor plugin",
+            ]
+        },
+        {
+            id: "4",
+            role: "Frontend Developer",
             place: "@Freelance",
             date: "August, 2021 - Present",
             works: [
+                {
+                    name: "Agrolyfe,",
+                    link: "https://agrolyfe.farm/"
+                },
                 {
                     name: "Tosdis,",
                     link: "https://tosdis.netlify.app/"
@@ -237,10 +262,10 @@ $(document).ready(function () {
                     name: "BIP Mnemonic.",
                     link: "https://bip-mnemonic.netlify.app/"
                 },
-                // {
-                //     name: "Metamask,",
-                //     link: "https://metamask.netlify.app/"
-                // },
+                {
+                    name: "Metamask,",
+                    link: "https://metamask.netlify.app/"
+                },
             ],
             workDescription: [
                 "Design UIs for web applications, progressive web applications, and websites.",
@@ -251,7 +276,7 @@ $(document).ready(function () {
             ]
         },
         {
-            id: "4",
+            id: "5",
             role: "Peer Mentor",
             place: "@Oxford Octopus",
             date: "June, 2021 - August, 2021",
@@ -262,10 +287,10 @@ $(document).ready(function () {
             ]
         },
         {
-            id: "5",
+            id: "6",
             role: "Volunteer",
             place: "@<abbr title='Oxford Integrated Web solutions'>OIWS</abbr>",
-            date: "October, 2020 - December, 2020",
+            date: "October - December, 2020",
             workDescription: [
                 "Volunteered for 3 months to improve coding skills, while solving technical problems for the firm.",
 
