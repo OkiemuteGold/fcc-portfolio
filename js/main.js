@@ -202,7 +202,7 @@ $(document).ready(function () {
 
                 "Validated all HTML, and CSS codes using W3C Validation Service and Carried out usability, mobile-friendly, and responsive design testing using Google’s Mobile-Friendly Test",
 
-                "Collaborated with the team, and supported projects through ideation, development, and delivery.",
+                // "Collaborated with the team, and supported projects through ideation, development, and delivery.",
 
                 "Provided technical product support services to clients, users, and other team members."
             ]
